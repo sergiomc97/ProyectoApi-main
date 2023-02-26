@@ -10,7 +10,6 @@ namespace ProyectoApi.Presentacion {
     /// </summary>
     public partial class Admin : Page {
 
-        public APOD ap;
         public Menu2 m;
         Usuario u;
         List<Usuario> usuarios = new List<Usuario>();
@@ -20,7 +19,6 @@ namespace ProyectoApi.Presentacion {
 
         public Admin(Usuario u, Menu2 m) {
             InitializeComponent();
-            ap = control;
             this.m = m;
             this.u = u;
         }

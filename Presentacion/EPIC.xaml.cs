@@ -19,14 +19,12 @@ namespace ProyectoApi.Presentacion {
         ControllerBD cBd = new ControllerBD();
         Usuario u;
         Menu2 m;
-        APOD ap;
 
 
         public EPIC(Usuario u, Menu2 m) {
             InitializeComponent();
             this.u = u;
             this.m = m;
-            ap = control;
         }
 
 

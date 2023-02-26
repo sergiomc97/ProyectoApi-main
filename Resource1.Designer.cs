@@ -289,5 +289,15 @@ namespace ProyectoApi {
                 return ((byte[])(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        public static byte[] SpaceIcons__25_ {
+            get {
+                object obj = ResourceManager.GetObject("SpaceIcons__25_", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }

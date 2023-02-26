@@ -4,7 +4,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:uc="clr-namespace:ProyectoApi.Presentacion"
     Title="login"
     d:DesignHeight="620"
     d:DesignWidth="1502"
@@ -313,40 +312,6 @@
         </Grid>
 
         <Expander
-            x:Name="expander"
-            Grid.Row="0"
-            Grid.RowSpan="3"
-            HorizontalAlignment="Left"
-            Background="#A3E2F3"
-            ExpandDirection="Right">
-            <Expander.Effect>
-                <DropShadowEffect
-                    BlurRadius="100"
-                    ShadowDepth="0"
-                    Color="Black" />
-            </Expander.Effect>
-            <Expander.Header>
-                <TextBlock
-                    Width="133"
-                    Height="18"
-                    Foreground="Black"
-                    Text="Mas informacion">
-                    <TextBlock.LayoutTransform>
-                        <TransformGroup>
-                            <ScaleTransform />
-                            <SkewTransform />
-                            <RotateTransform Angle="90" />
-                            <TranslateTransform />
-                        </TransformGroup>
-                    </TextBlock.LayoutTransform>
-                </TextBlock>
-            </Expander.Header>
-            <Grid>
-                <uc:APOD x:Name="control" />
-            </Grid>
-        </Expander>
-
-        <Expander
             x:Name="expan"
             Grid.Row="0"
             Grid.RowSpan="3"
@@ -365,7 +330,7 @@
                     Width="133"
                     Height="18"
                     Foreground="#84DCCF"
-                    Text="Mas informacion">
+                    Text="Menu">
                     <TextBlock.LayoutTransform>
                         <TransformGroup>
                             <ScaleTransform />
@@ -376,9 +341,7 @@
                     </TextBlock.LayoutTransform>
                 </TextBlock>
             </Expander.Header>
-            <Grid x:Name="UControl">
-                <!--<uc:Menu2 x:Name="control2" Margin="0,0,0,0" />-->
-            </Grid>
+            <Grid x:Name="UControl" />
         </Expander>
 
 

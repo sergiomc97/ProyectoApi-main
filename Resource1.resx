@@ -142,6 +142,9 @@
   <data name="ProyectoApi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\ProyectoApi.db;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="SpaceIcons__25_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SpaceIcons (25).png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Space_icons__10_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Space icons (10).png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>

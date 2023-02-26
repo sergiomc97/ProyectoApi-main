@@ -5,11 +5,9 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:uc="clr-namespace:ProyectoApi.Presentacion"
-    xmlns:xrpb="http://XamlRadialProgressBar/DotNet"
     Title="login"
     d:DesignHeight="620"
     d:DesignWidth="1502"
-    ShowsNavigationUI="False"
     mc:Ignorable="d">
     <Grid x:Name="grid" Loaded="Grid_LoadedAsync">
         <Grid.RowDefinitions>
@@ -149,41 +147,81 @@
                     </TextBlock.LayoutTransform>
                 </TextBlock>
             </Expander.Header>
-            <Grid>
-                <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-                <Label Style="{StaticResource LabelRover}"
-                    Grid.Row="0">
-                    FHAZ:Cámara frontal para evitar peligros
-                </Label>
-                <Label Style="{StaticResource LabelRover}" Grid.Row="1">
-                    RHAZ: Cámara trasera para evitar peligros
-                </Label>
-                <Label Style="{StaticResource LabelRover}" Grid.Row="2">
-                    MAST: Cámara de mástil
-                </Label>
-                <Label Style="{StaticResource LabelRover}" Grid.Row="3">
-                    CHEMCAM: Complejo de cámara y química
-                </Label>
-                <Label Style="{StaticResource LabelRover}" Grid.Row="4">
-                    MAHLI: Captador manual de imágenes de Marte
-                </Label>
-                <Label Style="{StaticResource LabelRover}" Grid.Row="5">
-                    MARDI: Cámara de descenso a Marte
-                </Label>
-                <Label Style="{StaticResource LabelRover}" Grid.Row="6">
-                    NAVCAM: Cámara de navegación
-                </Label>
-            </Grid>
-            </Grid>
+            <Viewbox
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Stretch="Uniform">
+                <Grid
+                    Grid.Column="1"
+                    Width="550"
+                    Height="996"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Opacity="0.9">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="20" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="5*" />
+                        <RowDefinition Height="5*" />
+                        <RowDefinition Height="30" />
+
+                    </Grid.RowDefinitions>
+                    <TextBlock
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        FontFamily="Nasalization Rg"
+                        FontSize="32"
+                        Text="Rover" />
+
+                    <TextBox
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        Style="{StaticResource TextBoxTextoLargo}"
+                        Text="Esta API está diseñada para recopilar datos de imágenes recopilados por los rovers Curiosity de la NASA en Marte y hacer que estén más fácilmente disponibles para otros desarrolladores, educadores y científicos ciudadanos. Chris Cerami mantiene esta API.Las fotos están organizadas por el sol (rotación marciana o día) en el que fueron tomadas, contando desde la fecha de aterrizaje del rover. Una foto tomada en el sol marciano número 1000 de Curiosity explorando Marte, por ejemplo, tendrá un atributo de sol de 1000. Si prefiere buscar por la fecha de la Tierra en la que se tomó una foto, también puede hacerlo.  Además de consultar por fecha, los resultados también se pueden filtrar por la cámara con la que se tomaron.Cada cámara tiene una función y una perspectiva únicas, y se nombran de la siguiente manera:" />
+                    <Grid
+                        x:Name="CamExplicacion"
+                        Grid.Row="3"
+                        Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Label Grid.Row="0" Style="{StaticResource LabelRover}">
+                            FHAZ:Cámara frontal para evitar peligros
+                        </Label>
+                        <Label Grid.Row="1" Style="{StaticResource LabelRover}">
+                            RHAZ: Cámara trasera para evitar peligros
+                        </Label>
+                        <Label Grid.Row="2" Style="{StaticResource LabelRover}">
+                            MAST: Cámara de mástil
+                        </Label>
+                        <Label Grid.Row="3" Style="{StaticResource LabelRover}">
+                            CHEMCAM: Complejo de cámara y química
+                        </Label>
+                        <Label Grid.Row="4" Style="{StaticResource LabelRover}">
+                            MAHLI: Captador manual de imágenes de Marte
+                        </Label>
+                        <Label Grid.Row="5" Style="{StaticResource LabelRover}">
+                            MARDI: Cámara de descenso a Marte
+                        </Label>
+                        <Label Grid.Row="6" Style="{StaticResource LabelRover}">
+                            NAVCAM: Cámara de navegación
+                        </Label>
+                    </Grid>
+
+
+                </Grid>
+            </Viewbox>
         </Expander>
         <Button
             Name="btn5"
@@ -217,7 +255,7 @@
                     Width="133"
                     Height="18"
                     Foreground="#84DCCF"
-                    Text="Mas informacion">
+                    Text="Menu">
                     <TextBlock.LayoutTransform>
                         <TransformGroup>
                             <ScaleTransform />

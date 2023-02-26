@@ -35,48 +35,13 @@
             <Grid Grid.Row="1" Grid.Column="1">
 
                 <Button
-                    x:Name="girar"
+                    x:Name="Siguiente"
                     Background="Transparent"
                     Click="girar_Click"
                     Content="GIRAR"
                     Style="{StaticResource btnStyle}" />
             </Grid>
         </Border>
-
-
-        <Expander
-            x:Name="expander"
-            Grid.Row="0"
-            Grid.RowSpan="3"
-            HorizontalAlignment="Left"
-            Background="#A3E2F3"
-            ExpandDirection="Right">
-            <Expander.Effect>
-                <DropShadowEffect
-                    BlurRadius="100"
-                    ShadowDepth="0"
-                    Color="Black" />
-            </Expander.Effect>
-            <Expander.Header>
-                <TextBlock
-                    Width="133"
-                    Height="18"
-                    Foreground="Black"
-                    Text="Mas informacion">
-                    <TextBlock.LayoutTransform>
-                        <TransformGroup>
-                            <ScaleTransform />
-                            <SkewTransform />
-                            <RotateTransform Angle="90" />
-                            <TranslateTransform />
-                        </TransformGroup>
-                    </TextBlock.LayoutTransform>
-                </TextBlock>
-            </Expander.Header>
-            <Grid>
-                <uc:APOD x:Name="control" />
-            </Grid>
-        </Expander>
 
 
         <Expander

@@ -4,7 +4,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:uc="clr-namespace:ProyectoApi.Presentacion"
     Title="login"
     d:DesignHeight="620"
     d:DesignWidth="1502"
@@ -365,8 +364,24 @@
                 </TextBlock>
             </Expander.Header>
             <Grid>
-                <uc:APOD x:Name="control" />
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Label
+                    Grid.Row="0"
+                    FontSize="20"
+                    Style="{StaticResource LabelRover}">
+                    Asteroids - NeoWs
+                </Label>
+                <TextBox
+                    Grid.Row="2"
+                    Padding="1,1,1,1"
+                    Style="{StaticResource TextBoxTextoLargo}"
+                    Text="NeoWs (Near Earth Object Web Service) es un servicio web RESTful para información sobre asteroides cercanos a la Tierra. " />
+
             </Grid>
+
         </Expander>
 
 
@@ -389,7 +404,7 @@
                     Width="133"
                     Height="18"
                     Foreground="#84DCCF"
-                    Text="Mas informacion">
+                    Text="Menu">
                     <TextBlock.LayoutTransform>
                         <TransformGroup>
                             <ScaleTransform />

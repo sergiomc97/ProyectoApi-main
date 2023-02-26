@@ -10,7 +10,6 @@ namespace ProyectoApi.Presentacion {
     /// </summary>
     public partial class Asteroids : Page {
 
-        public APOD ap;
         public Menu2 m;
         public string imageUri = string.Empty;
         Usuario u;
@@ -21,7 +20,6 @@ namespace ProyectoApi.Presentacion {
 
         public Asteroids(Usuario u, Menu2 m) {
             InitializeComponent();
-            ap = control;
             this.m = m;
             this.u = u;
         }

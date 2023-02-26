@@ -9,14 +9,6 @@
     mc:Ignorable="d">
     <Viewbox>
 
-        <!--
-            #294D96
-            #D0CFDD
-            #5577B2
-            #869FC8
-            #D14E49
-            #713D62
-        -->
         <Grid Loaded="Grid_Loaded">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="20" />
@@ -45,7 +37,7 @@
                 x:Name="gridUser"
                 Grid.Row="1"
                 Grid.Column="1"
-                Background="#5577B2">
+                Background="#2770B3">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="2*" />
                     <RowDefinition Height="*" />
@@ -135,7 +127,7 @@
                         Click="fav_Click">
                         <Button.Content>
                             <StackPanel Width="500" Orientation="Horizontal">
-                                <Image Width="100" Source="/Resources/Space icons (47).png" />
+                                <Image Width="100" Source="/Resources/SpaceIcons (25).png" />
                                 <Label
                                     VerticalAlignment="Center"
                                     Content="FAVORITOS"
@@ -152,7 +144,7 @@
             <Border
                 Grid.Row="3"
                 Grid.Column="1"
-                Background="#869FC8">
+                Background="#2770B3">
                 <Border.Effect>
                     <DropShadowEffect
                         BlurRadius="100"
@@ -187,7 +179,7 @@
             <Border
                 Grid.Row="5"
                 Grid.Column="1"
-                Background="#5577B2">
+                Background="#4DA9E2">
                 <Border.Effect>
                     <DropShadowEffect
                         BlurRadius="100"
@@ -221,7 +213,7 @@
             <Border
                 Grid.Row="7"
                 Grid.Column="1"
-                Background="#6572A5">
+                Background="#73D3FF">
                 <Border.Effect>
                     <DropShadowEffect
                         BlurRadius="100"
@@ -254,7 +246,7 @@
             <Border
                 Grid.Row="9"
                 Grid.Column="1"
-                Background="#93637E">
+                Background="#A3E2F3">
                 <Border.Effect>
                     <DropShadowEffect
                         BlurRadius="100"
@@ -287,7 +279,7 @@
             <Border
                 Grid.Row="11"
                 Grid.Column="1"
-                Background="#B25964">
+                Background="#D0CFDD">
                 <Border.Effect>
                     <DropShadowEffect
                         BlurRadius="100"
@@ -321,7 +313,7 @@
                 x:Name="ad"
                 Grid.Row="13"
                 Grid.Column="1"
-                Background="#D14E49"
+                Background="#E6D3F3"
                 Visibility="Collapsed">
                 <Border.Effect>
                     <DropShadowEffect

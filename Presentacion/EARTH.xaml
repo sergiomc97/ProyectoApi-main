@@ -5,11 +5,9 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:uc="clr-namespace:ProyectoApi.Presentacion"
-    xmlns:xrpb="http://XamlRadialProgressBar/DotNet"
     Title="login"
     d:DesignHeight="620"
     d:DesignWidth="1502"
-    ShowsNavigationUI="False"
     mc:Ignorable="d">
     <Grid x:Name="grid" Loaded="Grid_LoadedAsync">
         <Grid.RowDefinitions>
@@ -100,9 +98,47 @@
                     </TextBlock.LayoutTransform>
                 </TextBlock>
             </Expander.Header>
-            <Grid>
-                <uc:APOD x:Name="control" />
-            </Grid>
+            <Viewbox
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Stretch="Uniform">
+                <Grid
+                    Grid.Column="1"
+                    Width="550"
+                    Height="996"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Opacity="0.9">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="20" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="5*" />
+                        <RowDefinition Height="30" />
+
+                    </Grid.RowDefinitions>
+                    <TextBlock
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        FontFamily="Nasalization Rg"
+                        FontSize="32"
+                        Text="EARTH" />
+
+                    <TextBox
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        Style="{StaticResource TextBoxTextoLargo}"
+                        Text="Las imágenes de Landsat se proporcionan al público como un proyecto conjunto entre la NASA y el USGS. Esta API funciona con la API de Google Earth Engine y actualmente solo admite imágenes de Landsat 8 con nitidez panorámica. Este punto final recupera la imagen de Landsat 8 para la ubicación y la fecha proporcionadas. Es posible que el recurso solicitado no esté disponible para la fecha exacta de la solicitud. " />
+
+
+
+                </Grid>
+            </Viewbox>
+
         </Expander>
         <Button
             Name="btn5"
@@ -136,7 +172,7 @@
                     Width="133"
                     Height="18"
                     Foreground="#84DCCF"
-                    Text="Mas informacion">
+                    Text="Menu">
                     <TextBlock.LayoutTransform>
                         <TransformGroup>
                             <ScaleTransform />

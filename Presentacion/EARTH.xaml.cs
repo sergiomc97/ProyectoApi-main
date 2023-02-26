@@ -11,7 +11,6 @@ namespace ProyectoApi.Presentacion {
     /// </summary>
     public partial class EARTH : Page {
 
-        public APOD ap;
         public Menu2 m;
         private string key = "Hfdvt1904UaVxgf9yelYVSajHkBU47nO9Bz3mSLS";
         private string keyBing = "AqPv3Znu - 9fQnnBNfYhnL5gPyK10tQ5tz6HWeaJzYxnoSr9SbH6Y1DWEwrW6C9nX";
@@ -27,7 +26,6 @@ namespace ProyectoApi.Presentacion {
 
         public EARTH(Usuario u, Menu2 m) {
             InitializeComponent();
-            ap = control;
             this.m = m;
             this.u = u;
 

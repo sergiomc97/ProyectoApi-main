@@ -168,7 +168,7 @@
                     Width="133"
                     Height="18"
                     Foreground="#84DCCF"
-                    Text="Mas informacion">
+                    Text="Menu">
                     <TextBlock.LayoutTransform>
                         <TransformGroup>
                             <ScaleTransform />
