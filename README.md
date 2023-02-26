@@ -27,5 +27,77 @@ La aplicación proporciona varias funciones útiles, podrás visualizar imágene
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/[sergiomc97]/[ProyectoApi-main]/capturas/Captura1.png?raw=true)
+![App Screenshot](https://github.com/[sergiomc97]/[ProyectoApi-main]/capturas/Captura2.png?raw=true)
+![App Screenshot](https://github.com/[sergiomc97]/[ProyectoApi-main]/capturas/Captura3.png?raw=true)
+![App Screenshot](https://github.com/[sergiomc97]/[ProyectoApi-main]/capturas/Captura4.png?raw=true)
+![App Screenshot](https://github.com/[sergiomc97]/[ProyectoApi-main]/capturas/Captura5.png?raw=true)
+![App Screenshot](https://github.com/[sergiomc97]/[ProyectoApi-main]/capturas/Captura6.png?raw=true)
+
+
+
+
+## API Reference
+
+
+#### Imagen del dia
+##### Consulta para obtener la Imagen del dia
+
+```http
+  GET https://api.nasa.gov/planetary/apod?api_key={key}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `key`      | `string` | **Required**. API KEY personal |
+
+#### EARTH
+##### Consulta para obtener la vista satelital de una ubicacion
+
+```http
+  GET https://api.nasa.gov/planetary/earth/imagery?lon={lon}&lat={lat}&api_key={key}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `key`      | `string` | **Required**. API KEY personal |
+| `lat`      | `string` | Longitud de la ubicacion |
+| `lon`      | `string` | Latitud de la ubicacion |
+
+#### EPIC
+##### Obtiene imagenes del del satélite DSCOVR
+
+```http
+  GET https://epic.gsfc.nasa.gov/archive/natural/{("yyyy/MM/dd")}/jpg/{imagenes[i]}.jpg
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `imagen`      | `string` | Direccion a la imagen |
+
+#### ASTEROIDS
+##### Obtiene datos de asteroides cercanos a la tierra
+
+```http
+  GET http://api.nasa.gov/neo/rest/v1/neo/browse?page=0&size=20&api_key={key}"
+
+```
+
+#### ROVER
+##### Obtiene imagenes de las camaras del rover curiosity en marte
+
+```http
+  GET https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/
+$"photos?earth_date={}&camera={}&api_key={key}"
+
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `key`      | `string` | **Required**. API KEY personal |
+| `date`      | `string` | Fecha de la imagen |
+| `camera`      | `string` | Camara del rover |
+
+
+
 
