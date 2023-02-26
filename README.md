@@ -27,12 +27,12 @@ La aplicación proporciona varias funciones útiles, podrás visualizar imágene
 
 ## Screenshots
 
-![App Screenshot](https://github.com/[sergiomc97]/[ProyectoApi-main]/capturas/Captura1.png?raw=true)
-![App Screenshot](https://github.com/[sergiomc97]/[ProyectoApi-main]/capturas/Captura2.png?raw=true)
-![App Screenshot](https://github.com/[sergiomc97]/[ProyectoApi-main]/capturas/Captura3.png?raw=true)
-![App Screenshot](https://github.com/[sergiomc97]/[ProyectoApi-main]/capturas/Captura4.png?raw=true)
-![App Screenshot](https://github.com/[sergiomc97]/[ProyectoApi-main]/capturas/Captura5.png?raw=true)
-![App Screenshot](https://github.com/[sergiomc97]/[ProyectoApi-main]/capturas/Captura6.png?raw=true)
+![App Screenshot](https://github.com/[sergiomc97]/[ProyectoApi-main]/blob/main/capturas/Captura1.png?raw=true)
+![App Screenshot](https://github.com/[sergiomc97]/[ProyectoApi-main]/blob/main/capturas/Captura2.png?raw=true)
+![App Screenshot](https://github.com/[sergiomc97]/[ProyectoApi-main]/blob/main/capturas/Captura3.png?raw=true)
+![App Screenshot](https://github.com/[sergiomc97]/[ProyectoApi-main]/blob/main/capturas/Captura4.png?raw=true)
+![App Screenshot](https://github.com/[sergiomc97]/[ProyectoApi-main]/blob/main/capturas/Captura5.png?raw=true)
+![App Screenshot](https://github.com/[sergiomc97]/[ProyectoApi-main]/blob/main/capturas/Captura6.png?raw=true)
 
 
 
