@@ -10,7 +10,7 @@ La aplicación proporciona varias funciones útiles, podrás visualizar imágene
 -   Visualización de información detallada sobre un asteroide específico, como su tamaño, velocidad y distancia a la Tierra.
 ### Uso Pagina Asteroids:
 En esta pagina se muestran los datos mas relevantes spbre una coleccion de asteroides, haciendo click en el boton Siguiente se puede ir cambiando de asteroide. 
-## Screenshots
+## Screenshots Asteroids
 
 ![App Screenshot](https://github.com/sergiomc97/ProyectoApi-main/blob/main/capturas/Captura7.png?raw=true)
 
@@ -19,7 +19,7 @@ En esta pagina se muestran los datos mas relevantes spbre una coleccion de aster
 -   Búsqueda de imágenes de la Tierra por ubicación.
 ### Uso Pagina EARTH:
 Podemos buscar en el cuadro de busqueda una ciudad, seleccionarla en el ComboBox y aparecera una imagen de la vista satelital de la ubicacion seleccionada
-## Screenshots
+## Screenshots EARTH
 
 ![App Screenshot](https://github.com/sergiomc97/ProyectoApi-main/blob/main/capturas/Captura8.png?raw=true)
 
@@ -29,7 +29,7 @@ Podemos buscar en el cuadro de busqueda una ciudad, seleccionarla en el ComboBox
 -   Creación de animaciones a partir de imágenes tomadas en diferentes momentos.
 ### Uso Pagina EPIC:
 En esta pagina, se muestra una imagen de la tierra, al hacer click en el boton, la tierra va girando.
-## Screenshots
+## Screenshots EPIC
 
 ![App Screenshot](https://github.com/sergiomc97/ProyectoApi-main/blob/main/capturas/Captura9.png?raw=true)
 
@@ -50,7 +50,7 @@ En esta pagina, podemos seleccionar una fecha y camara del rover curiosity en ma
 -   NAVCAM: Cámara de navegación
 
 Se puede avanzar y retroceder entre las distintas fotos devueltas de la api usando los botones anterior y siguiente.
-## Screenshots
+## Screenshots ROVER
 
 ![App Screenshot](https://github.com/sergiomc97/ProyectoApi-main/blob/main/capturas/Captura10.png?raw=true)
 
@@ -59,7 +59,7 @@ Se puede avanzar y retroceder entre las distintas fotos devueltas de la api usan
 
 ### Uso Pagina APOD:
 En esta pagina, se muestra la imagen astronomica del dia, ademas te permite seleccionar otra fecha.
-## Screenshots
+## Screenshots APOD
 
 ![App Screenshot](https://github.com/sergiomc97/ProyectoApi-main/blob/main/capturas/Captura5.png?raw=true)
 
@@ -133,4 +133,121 @@ En esta pagina, se muestra la imagen astronomica del dia, ademas te permite sele
 
 
 
+## Para programadores:
 
+
+<table id="MethodList" class="table is-hoverable">
+                <tbody><tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)" target="_blank" rel="noopener noreferrer">Equals</a>
+                  </td>
+                  <td>Determines whether the specified object is equal to the current object.<br>(Se hereda de <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.object.finalize#system-object-finalize" target="_blank" rel="noopener noreferrer">Finalize</a>
+                  </td>
+                  <td>Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Se hereda de <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="e53717c6-ee74-73a0-eb5c-503a65aa427c.htm">GetAsteroids</a>
+                  </td>
+                  <td>
+            Este método llama a la API Near Earth Object Web Service (NeoWs) de la NASA
+            para obtener información sobre los asteroides cercanos a la Tierra y devuelve
+            una lista de objetos Asteroide que contienen información sobre cada asteroide.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode" target="_blank" rel="noopener noreferrer">GetHashCode</a>
+                  </td>
+                  <td>Serves as the default hash function.<br>(Se hereda de <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="3a9a2ae9-5c48-1e83-3e6f-fcf4807a15e1.htm">GetImage</a>
+                  </td>
+                  <td>
+            Devuelve una imagen desde una url
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="8cd1a0c4-46b4-8ee5-a7a9-9528921971e1.htm">GetImageList<span id="LSTACD0D1AF_0" data-languagespecifictext="cs=()|vb=|cpp=()|nu=()|fs=()">()</span></a>
+                  </td>
+                  <td>
+            Este método devuelve una lista de imágenes de fondo de pantalla de la API EPIC de la NASA.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="fc230db8-96e1-bea6-5579-0b03c218ca29.htm">GetImageList(String)</a>
+                  </td>
+                  <td>
+            Este método devuelve una lista de imágenes de la API Mars Rover Photos de la NASA.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="d82a708b-74b2-9277-7953-c3d2d31c498d.htm">GetJson</a>
+                  </td>
+                  <td>
+            Este método hace una solicitud HTTP GET a una URL específica y devuelve el contenido como un objeto JsonDocument.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="0cefc3ad-669f-7eee-9587-9d813e1532cc.htm">GetStrings<span id="LSTACD0D1AF_1" data-languagespecifictext="cs=()|vb=|cpp=()|nu=()|fs=()">()</span></a>
+                  </td>
+                  <td>
+            Este método devuelve una lista de imagenes que representan las imágenes más recientes de la API EPIC de la NASA.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="a9a11176-26a1-abec-8cf7-da1db8f56de6.htm">GetStrings(String)</a>
+                  </td>
+                  <td>
+            Este método devuelve una lista de cadenas que representan las imágenes de la API Mars Rover Photos de la NASA.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype" target="_blank" rel="noopener noreferrer">GetType</a>
+                  </td>
+                  <td>Gets the <a href="https://learn.microsoft.com/dotnet/api/system.type" target="_blank" rel="noopener noreferrer">Type</a> of the current instance.<br>(Se hereda de <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone" target="_blank" rel="noopener noreferrer">MemberwiseClone</a>
+                  </td>
+                  <td>Creates a shallow copy of the current <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>.<br>(Se hereda de <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="f6be97d1-f060-29da-d199-ef578a757ca4.htm">SetBackground</a>
+                  </td>
+                  <td>
+            Este método establece la imagen de fondo de una Grid (cuadrícula)
+            y la ajusta a su tamaño original.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="6397c4f1-190c-74bf-cb52-d59ff23b40c4.htm">SetBackgroundStretch</a>
+                  </td>
+                  <td>
+            Este método establece la imagen de fondo de una Grid (cuadrícula)
+            y la ajusta para que cubra toda la cuadrícula sin deformar la imagen.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring" target="_blank" rel="noopener noreferrer">ToString</a>
+                  </td>
+                  <td>Returns a string that represents the current object.<br>(Se hereda de <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
+                </tr>
+              </tbody></table>
+</table>
