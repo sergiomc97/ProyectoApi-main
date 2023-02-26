@@ -70,7 +70,7 @@ En esta pagina, se muestra la imagen astronomica del dia, ademas te permite sele
 ![App Screenshot](https://github.com/sergiomc97/ProyectoApi-main/blob/main/capturas/Captura3.png?raw=true)
 
 
-
+# Para programadores:
 ## Consultas a la API usadas:
 
 
@@ -133,7 +133,7 @@ En esta pagina, se muestra la imagen astronomica del dia, ademas te permite sele
 
 
 
-# Para programadores:
+
 
 ## Clase ControllerApi.cs
 
@@ -326,3 +326,7 @@ En esta pagina, se muestra la imagen astronomica del dia, ademas te permite sele
             Convierte un objeto Stream a un objeto BitmapImage.
             </td>
               </tbody></table>
+
+## Esquema base de datos
+
+![App Screenshot](https://github.com/sergiomc97/ProyectoApi-main/blob/main/capturas/Captura11.png?raw=true)
