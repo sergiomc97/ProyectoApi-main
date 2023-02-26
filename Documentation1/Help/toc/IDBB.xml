@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="3b81b9d1-9cc8-2d3a-9bac-52532c2f3afe.htm">Docs</a>
+    </li>
+    <li>
+      <a href="44674d4f-a0e5-665f-fb44-676d823b5dda.htm">Proyecto<wbr />Api.<wbr />controller</a>
+    </li>
+    <li>
+      <a href="569adb29-5da8-e4c8-35f3-edc2c28acb8b.htm">Controller<wbr />BD</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="40ad5a78-64de-4090-1dc5-507f9207b483" href="40ad5a78-64de-4090-1dc5-507f9207b483.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="a057007d-a794-2e93-01c4-9559976f1755" class="has-submenu" href="a057007d-a794-2e93-01c4-9559976f1755.htm">
+        <span data-tocFile="../toc/IDBBB.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Métodos</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

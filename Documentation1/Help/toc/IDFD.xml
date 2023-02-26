@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="3b81b9d1-9cc8-2d3a-9bac-52532c2f3afe.htm">Docs</a>
+    </li>
+    <li>
+      <a href="562b6a47-b7bb-6695-f1b9-4bf395a24e95.htm">Proyecto<wbr />Api.<wbr />Presentacion</a>
+    </li>
+    <li>
+      <a href="09366f4e-b6b2-dbff-f3a0-e6bef6750c08.htm">Favoritos</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="c197097c-905b-41b4-dc3f-d15ffb581db9" href="c197097c-905b-41b4-dc3f-d15ffb581db9.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="e4d46870-1604-967b-527a-04fbbf896661" href="e4d46870-1604-967b-527a-04fbbf896661.htm">Propiedades</a>
+    </li>
+    <li>
+      <a id="d6c585fc-bcd4-e542-d40a-ba54fc1fac0c" class="has-submenu" href="d6c585fc-bcd4-e542-d40a-ba54fc1fac0c.htm">
+        <span data-tocFile="../toc/IDCFD.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Métodos</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="07f2b2ab-043c-a98f-41e0-a68c1874721b" href="07f2b2ab-043c-a98f-41e0-a68c1874721b.htm">Eventos</a>
+    </li>
+  </tocItems>
+</toc>

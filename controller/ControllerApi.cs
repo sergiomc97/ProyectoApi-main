@@ -20,7 +20,12 @@ namespace ProyectoApi.controller {
         private DateTime dt;
 
 
-
+        /// <summary>
+        /// Este método hace una solicitud HTTP GET a una URL específica y devuelve el contenido como un objeto JsonDocument.
+        /// </summary>
+        /// <param name="consulta">
+        /// url de consulta
+        /// </param>
         public async Task<JsonDocument> GetJson(string consulta) {
             try {
                 using var client = new HttpClient();
@@ -33,6 +38,10 @@ namespace ProyectoApi.controller {
             }
 
         }
+
+        /// <summary>
+        /// Este método devuelve una lista de imagenes que representan las imágenes más recientes de la API EPIC de la NASA.
+        /// </summary>
         public async Task<List<string>> GetStrings() {
 
             List<string> imagenes = new List<string>();
@@ -47,7 +56,12 @@ namespace ProyectoApi.controller {
 
         }
 
-
+        /// <summary>
+        /// Este método devuelve una lista de cadenas que representan las imágenes de la API Mars Rover Photos de la NASA.
+        /// </summary>
+        /// <param name="url">
+        /// url de la consulta
+        /// </param>
         public async Task<List<string>> GetStrings(string url) {
             List<string> imagenes = new List<string>();
             json = await GetJson(url);
@@ -62,7 +76,9 @@ namespace ProyectoApi.controller {
 
         }
 
-
+        /// <summary>
+        /// Este método devuelve una lista de imágenes de fondo de pantalla de la API EPIC de la NASA.
+        /// </summary>
         public async Task<List<BitmapImage>> GetImageList() {
 
             List<string> imagenes = await GetStrings();
@@ -80,6 +96,15 @@ namespace ProyectoApi.controller {
 
 
         }
+
+        /// <summary>
+        /// Este método devuelve una lista de imágenes de la API Mars Rover Photos de la NASA.
+        /// </summary>
+        /// <param name="url">
+        /// url de la consulta
+        /// </param>
+        /// 
+
         public async Task<List<BitmapImage>> GetImageList(string url) {
 
             List<string> imagenes = await GetStrings(url);
@@ -97,11 +122,24 @@ namespace ProyectoApi.controller {
 
         }
 
+        /// <summary>
+        /// Devuelve una imagen desde una url
+        /// </summary>
+        /// <param name="imageUri">
+        /// url de la imagen
+        /// </param>
+        /// 
         public BitmapImage GetImage(string imageUri) {
             var bitmapImage = new BitmapImage(new Uri(imageUri));
             return bitmapImage;
 
         }
+
+        /// <summary>
+        /// Este método llama a la API Near Earth Object Web Service (NeoWs) de la NASA
+        /// para obtener información sobre los asteroides cercanos a la Tierra y devuelve
+        /// una lista de objetos Asteroide que contienen información sobre cada asteroide.
+        /// </summary>
 
         public async Task<List<Asteroide>> GetAsteroids() {
             List<Asteroide> asteroides = new List<Asteroide>();
@@ -136,7 +174,16 @@ namespace ProyectoApi.controller {
 
         }
 
-
+        /// <summary>
+        /// Este método establece la imagen de fondo de una Grid (cuadrícula)
+        /// y la ajusta para que cubra toda la cuadrícula sin deformar la imagen.
+        /// </summary>
+        /// <param name="img">
+        /// imagen a aplicar
+        /// </param>
+        /// <param name="g">
+        /// grid al que se le va a cambiar el fondo
+        /// </param>
         public void SetBackgroundStretch(BitmapImage img, Grid g) {
             ImageBrush myBrush = new ImageBrush();
             myBrush.ImageSource = img;
@@ -144,6 +191,16 @@ namespace ProyectoApi.controller {
             g.Background = myBrush;
 
         }
+        /// <summary>
+        /// Este método establece la imagen de fondo de una Grid (cuadrícula)
+        /// y la ajusta a su tamaño original.
+        /// </summary>
+        /// <param name="img">
+        /// imagen a aplicar
+        /// </param>
+        /// <param name="g">
+        /// grid al que se le va a cambiar el fondo
+        /// </param>
         public void SetBackground(BitmapImage img, Grid g) {
             ImageBrush myBrush = new ImageBrush();
             myBrush.ImageSource = img;

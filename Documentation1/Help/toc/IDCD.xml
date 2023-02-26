@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="3b81b9d1-9cc8-2d3a-9bac-52532c2f3afe.htm">Docs</a>
+    </li>
+    <li>
+      <a href="562b6a47-b7bb-6695-f1b9-4bf395a24e95.htm">Proyecto<wbr />Api.<wbr />Presentacion</a>
+    </li>
+    <li>
+      <a href="84ae7211-390a-ac8c-0cd8-26967ce007ae.htm">Asteroids</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="9881f65e-c375-5e07-bc62-c2114fa3cebf" href="9881f65e-c375-5e07-bc62-c2114fa3cebf.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="5a6d98ba-e730-384a-bdba-b4403baa9861" href="5a6d98ba-e730-384a-bdba-b4403baa9861.htm">Propiedades</a>
+    </li>
+    <li>
+      <a id="52773cef-53df-aa2c-a1be-3cd89d23259d" class="has-submenu" href="52773cef-53df-aa2c-a1be-3cd89d23259d.htm">
+        <span data-tocFile="../toc/IDCCD.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Métodos</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="1f391a23-8a92-0391-e34c-6ca305de25de" href="1f391a23-8a92-0391-e34c-6ca305de25de.htm">Eventos</a>
+    </li>
+    <li>
+      <a id="22ba31fe-e6fc-1efb-7114-37c3b6c40452" class="has-submenu" href="22ba31fe-e6fc-1efb-7114-37c3b6c40452.htm">
+        <span data-tocFile="../toc/IDECD.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Campos</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="3b81b9d1-9cc8-2d3a-9bac-52532c2f3afe.htm">Docs</a>
+    </li>
+    <li>
+      <a href="562b6a47-b7bb-6695-f1b9-4bf395a24e95.htm">Proyecto<wbr />Api.<wbr />Presentacion</a>
+    </li>
+    <li>
+      <a href="470648db-5cc5-aee5-5630-5f7bf4d4b2f2.htm">login<wbr />OK</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="bd3b2a4a-8d52-ef9a-0fef-6789687e7de0" href="bd3b2a4a-8d52-ef9a-0fef-6789687e7de0.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="c688061a-df9a-60a2-da1a-47f9abe0842f" class="has-submenu" href="c688061a-df9a-60a2-da1a-47f9abe0842f.htm">
+        <span data-tocFile="../toc/IDBHD.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Propiedades</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="fcad3e2e-6f12-1363-ddf3-fb3792d60446" class="has-submenu" href="fcad3e2e-6f12-1363-ddf3-fb3792d60446.htm">
+        <span data-tocFile="../toc/IDCHD.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Métodos</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="c1886413-13a4-206a-7507-593d5bc343bf" href="c1886413-13a4-206a-7507-593d5bc343bf.htm">Eventos</a>
+    </li>
+    <li>
+      <a id="3fabcffa-afd2-fc11-78e3-f33de313ae6b" class="has-submenu" href="3fabcffa-afd2-fc11-78e3-f33de313ae6b.htm">
+        <span data-tocFile="../toc/IDEHD.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Campos</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="3b81b9d1-9cc8-2d3a-9bac-52532c2f3afe.htm">Docs</a>
+    </li>
+    <li>
+      <a href="562b6a47-b7bb-6695-f1b9-4bf395a24e95.htm">Proyecto<wbr />Api.<wbr />Presentacion</a>
+    </li>
+    <li>
+      <a href="4524ec46-6c33-e0be-0d78-41156700c2fa.htm">Menu<wbr />2</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="4678f7c1-fcaa-4f53-be3d-2c80ce2dbfa7" href="4678f7c1-fcaa-4f53-be3d-2c80ce2dbfa7.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="97d99429-f06f-e7c8-0bf5-6cf15c786cea" class="has-submenu" href="97d99429-f06f-e7c8-0bf5-6cf15c786cea.htm">
+        <span data-tocFile="../toc/IDBID.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Propiedades</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="972b51a4-2831-6936-5ed0-a5ab72281b03" class="has-submenu" href="972b51a4-2831-6936-5ed0-a5ab72281b03.htm">
+        <span data-tocFile="../toc/IDCID.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Métodos</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="4745b267-98c6-65e5-816e-405cda4edbb6" class="has-submenu" href="4745b267-98c6-65e5-816e-405cda4edbb6.htm">
+        <span data-tocFile="../toc/IDDID.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Eventos</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>
