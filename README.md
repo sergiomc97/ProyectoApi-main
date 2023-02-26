@@ -133,25 +133,16 @@ En esta pagina, se muestra la imagen astronomica del dia, ademas te permite sele
 
 
 
-## Para programadores:
+# Para programadores:
+
+## Clase ControllerApi.cs
 
 
 <table id="MethodList" class="table is-hoverable">
-                <tbody><tr>
-                  <td>
-                    <a href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)" target="_blank" rel="noopener noreferrer">Equals</a>
-                  </td>
-                  <td>Determines whether the specified object is equal to the current object.<br>(Se hereda de <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
-                </tr>
+                <tbody>
                 <tr>
                   <td>
-                    <a href="https://learn.microsoft.com/dotnet/api/system.object.finalize#system-object-finalize" target="_blank" rel="noopener noreferrer">Finalize</a>
-                  </td>
-                  <td>Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Se hereda de <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="e53717c6-ee74-73a0-eb5c-503a65aa427c.htm">GetAsteroids</a>
+                    <a href="Documentation1/Help/html/e53717c6-ee74-73a0-eb5c-503a65aa427c.htm">GetAsteroids</a>
                   </td>
                   <td>
             Este método llama a la API Near Earth Object Web Service (NeoWs) de la NASA
@@ -161,13 +152,7 @@ En esta pagina, se muestra la imagen astronomica del dia, ademas te permite sele
                 </tr>
                 <tr>
                   <td>
-                    <a href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode" target="_blank" rel="noopener noreferrer">GetHashCode</a>
-                  </td>
-                  <td>Serves as the default hash function.<br>(Se hereda de <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="3a9a2ae9-5c48-1e83-3e6f-fcf4807a15e1.htm">GetImage</a>
+                    <a href="Documentation1/Help/html/3a9a2ae9-5c48-1e83-3e6f-fcf4807a15e1.htm">GetImage</a>
                   </td>
                   <td>
             Devuelve una imagen desde una url
@@ -175,7 +160,7 @@ En esta pagina, se muestra la imagen astronomica del dia, ademas te permite sele
                 </tr>
                 <tr>
                   <td>
-                    <a href="8cd1a0c4-46b4-8ee5-a7a9-9528921971e1.htm">GetImageList<span id="LSTACD0D1AF_0" data-languagespecifictext="cs=()|vb=|cpp=()|nu=()|fs=()">()</span></a>
+                    <a href="Documentation1/Help/html/8cd1a0c4-46b4-8ee5-a7a9-9528921971e1.htm">GetImageList<span id="LSTACD0D1AF_0" data-languagespecifictext="cs=()|vb=|cpp=()|nu=()|fs=()">()</span></a>
                   </td>
                   <td>
             Este método devuelve una lista de imágenes de fondo de pantalla de la API EPIC de la NASA.
@@ -183,7 +168,7 @@ En esta pagina, se muestra la imagen astronomica del dia, ademas te permite sele
                 </tr>
                 <tr>
                   <td>
-                    <a href="fc230db8-96e1-bea6-5579-0b03c218ca29.htm">GetImageList(String)</a>
+                    <a href="Documentation1/Help/html/fc230db8-96e1-bea6-5579-0b03c218ca29.htm">GetImageList(String)</a>
                   </td>
                   <td>
             Este método devuelve una lista de imágenes de la API Mars Rover Photos de la NASA.
@@ -191,7 +176,7 @@ En esta pagina, se muestra la imagen astronomica del dia, ademas te permite sele
                 </tr>
                 <tr>
                   <td>
-                    <a href="d82a708b-74b2-9277-7953-c3d2d31c498d.htm">GetJson</a>
+                    <a href="Documentation1/Help/html/d82a708b-74b2-9277-7953-c3d2d31c498d.htm">GetJson</a>
                   </td>
                   <td>
             Este método hace una solicitud HTTP GET a una URL específica y devuelve el contenido como un objeto JsonDocument.
@@ -199,7 +184,7 @@ En esta pagina, se muestra la imagen astronomica del dia, ademas te permite sele
                 </tr>
                 <tr>
                   <td>
-                    <a href="0cefc3ad-669f-7eee-9587-9d813e1532cc.htm">GetStrings<span id="LSTACD0D1AF_1" data-languagespecifictext="cs=()|vb=|cpp=()|nu=()|fs=()">()</span></a>
+                    <a href="Documentation1/Help/html/0cefc3ad-669f-7eee-9587-9d813e1532cc.htm">GetStrings<span id="LSTACD0D1AF_1" data-languagespecifictext="cs=()|vb=|cpp=()|nu=()|fs=()">()</span></a>
                   </td>
                   <td>
             Este método devuelve una lista de imagenes que representan las imágenes más recientes de la API EPIC de la NASA.
@@ -207,7 +192,7 @@ En esta pagina, se muestra la imagen astronomica del dia, ademas te permite sele
                 </tr>
                 <tr>
                   <td>
-                    <a href="a9a11176-26a1-abec-8cf7-da1db8f56de6.htm">GetStrings(String)</a>
+                    <a href="Documentation1/Help/html/a9a11176-26a1-abec-8cf7-da1db8f56de6.htm">GetStrings(String)</a>
                   </td>
                   <td>
             Este método devuelve una lista de cadenas que representan las imágenes de la API Mars Rover Photos de la NASA.
@@ -215,19 +200,7 @@ En esta pagina, se muestra la imagen astronomica del dia, ademas te permite sele
                 </tr>
                 <tr>
                   <td>
-                    <a href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype" target="_blank" rel="noopener noreferrer">GetType</a>
-                  </td>
-                  <td>Gets the <a href="https://learn.microsoft.com/dotnet/api/system.type" target="_blank" rel="noopener noreferrer">Type</a> of the current instance.<br>(Se hereda de <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone" target="_blank" rel="noopener noreferrer">MemberwiseClone</a>
-                  </td>
-                  <td>Creates a shallow copy of the current <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>.<br>(Se hereda de <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="f6be97d1-f060-29da-d199-ef578a757ca4.htm">SetBackground</a>
+                    <a href="Documentation1/Help/html/f6be97d1-f060-29da-d199-ef578a757ca4.htm">SetBackground</a>
                   </td>
                   <td>
             Este método establece la imagen de fondo de una Grid (cuadrícula)
@@ -236,18 +209,120 @@ En esta pagina, se muestra la imagen astronomica del dia, ademas te permite sele
                 </tr>
                 <tr>
                   <td>
-                    <a href="6397c4f1-190c-74bf-cb52-d59ff23b40c4.htm">SetBackgroundStretch</a>
+                    <a href="Documentation1/Help/html/6397c4f1-190c-74bf-cb52-d59ff23b40c4.htm">SetBackgroundStretch</a>
                   </td>
                   <td>
             Este método establece la imagen de fondo de una Grid (cuadrícula)
             y la ajusta para que cubra toda la cuadrícula sin deformar la imagen.
             </td>
                 </tr>
+              </tbody></table>
+
+## Clase ControllerBD.cs
+
+<table id="MethodList" class="table is-hoverable">
+                <tbody><tr>
+                  <td>
+                    <a href="Documentation1/Help/html/7c4953a2-1f44-f6d2-33be-a39215304684.htm">CifrarContrasena</a>
+                  </td>
+                  <td>
+            Este método cifra una contraseña utilizando el algoritmo SHA256.(sacado de stackoverflow)
+            </td>
+                </tr>
                 <tr>
                   <td>
-                    <a href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring" target="_blank" rel="noopener noreferrer">ToString</a>
+                    <a href="Documentation1/Help/html/b9a9e5c4-d8ec-3b3a-c382-3f9e40d7fde0.htm">ComprobarCredenciales</a>
                   </td>
-                  <td>Returns a string that represents the current object.<br>(Se hereda de <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
+                  <td>
+            Este método comprueba las credenciales de un usuario en la tabla User de la base de datos.
+            </td>
                 </tr>
+                <tr>
+                  <td>
+                    <a href="Documentation1/Help/html/219d563e-bf6a-a505-485c-eae60f985efe.htm">conectar</a>
+                  </td>
+                  <td>
+            Este método establece la conexión a la base de datos SQLite.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="Documentation1/Help/html/f3f02114-edf9-fd34-688c-d0efdf5370c4.htm">consulta</a>
+                  </td>
+                  <td>
+            Este método consulta un usuario por su ID en la tabla User de la base de datos.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="Documentation1/Help/html/4a1f1a15-225f-cd16-d78b-c92ab3040c11.htm">ContarFavoritos</a>
+                  </td>
+                  <td>
+            Este método cuenta el número de registros de favoritos en la tabla Favoritos de la base de datos correspondientes a un usuario específico.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="Documentation1/Help/html/22739397-c272-93b8-d8cf-31b0dd21c2b5.htm">Create</a>
+                  </td>
+                  <td>
+            Este método crea un nuevo registro de usuario en la tabla User de la base de datos.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="Documentation1/Help/html/4094eef4-9346-8f25-5fbc-fa2214b4f06a.htm">DeleteFav</a>
+                  </td>
+                  <td>
+            Este método elimina los favoritos de un usuario de la tabla Favoritos de la base de datos.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="Documentation1/Help/html/31e18e61-4245-5a17-7089-ee473173f978.htm">DeleteUser</a>
+                  </td>
+                  <td>
+            Este método elimina un registro de usuario de la tabla User de la base de datos.
+            </td>
+                </tr>
+                <tr>
+                <tr>
+                  <td>
+                    <a href="Documentation1/Help/html/abd7cf29-a5a1-4e92-e5a2-c23ddd9ed173.htm">GetUsuarios</a>
+                  </td>
+                  <td>
+            Este método obtiene una lista de todos los usuarios almacenados en la tabla User de la base de datos.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="Documentation1/Help/html/44d0f868-ef9a-c56f-5dcf-d4f42c260250.htm">ImageToByte</a>
+                  </td>
+                  <td>
+            Convierte una imagen BitmapImage a un arreglo de bytes. (sacado de stackoverflow)
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="Documentation1/Help/html/c1bd69d2-031a-0f8b-aa3b-729d910ae10c.htm">InsertarImagen</a>
+                  </td>
+                  <td>
+            Inserta una imagen en la base de datos de favoritos asociada a un usuario dado.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="Documentation1/Help/html/5c48ae9b-21ee-3235-1fb3-c51b74f39927.htm">ObtenerImagen</a>
+                  </td>
+                  <td>
+            Obtiene una lista de imágenes almacenadas en la base de datos de favoritos para un usuario dado.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="Documentation1/Help/html/cc0fb2c4-312e-2bd0-d405-a7323420d67c.htm">ToImage</a>
+                  </td>
+                  <td>
+            Convierte un objeto Stream a un objeto BitmapImage.
+            </td>
               </tbody></table>
-</table>
