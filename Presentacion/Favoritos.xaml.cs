@@ -28,7 +28,7 @@ namespace ProyectoApi.Presentacion {
 
 
 
-        private async void Grid_LoadedAsync(object sender, RoutedEventArgs e) {
+        private void Grid_LoadedAsync(object sender, RoutedEventArgs e) {
             if (m.Parent != null) {
                 ((Grid)m.Parent).Children.Remove(m);
                 UControl.Children.Add(m);

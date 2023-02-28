@@ -13,10 +13,9 @@ namespace ProyectoApi.Presentacion {
         public Menu2 m;
         public string imageUri = string.Empty;
         Usuario u;
-        Asteroide a;
         int conta = 1;
-        List<Asteroide> asteroides = new List<Asteroide>();
-        ControllerApi c = new ControllerApi();
+        List<Asteroide> asteroides = new();
+        ControllerApi c = new();
 
         public Asteroids(Usuario u, Menu2 m) {
             InitializeComponent();

@@ -8,15 +8,15 @@ namespace ProyectoApi.Presentacion {
     /// Lógica de interacción para Window1.xaml
     /// </summary>
     public partial class Window1 : NavigationWindow {
-        Usuario u;
-        public Menu2 m;
-        loginOK l;
-        Favoritos F;
-        EARTH e;
-        EPIC p;
-        Asteroids a;
-        ROVER r;
-        Admin admin;
+        private Usuario u;
+        private Menu2 m;
+        private loginOK l;
+        private Favoritos F;
+        private EARTH e;
+        private EPIC p;
+        private Asteroids a;
+        private ROVER r;
+        private Admin admin;
         public Window1(Usuario u) {
             InitializeComponent();
             this.u = u;
@@ -56,7 +56,7 @@ namespace ProyectoApi.Presentacion {
                 Navigate(F);
             } else if (tipoPagina == typeof(Salida)) {
 
-                login l = new login();
+                Login l = new();
                 l.Show();
                 this.Close();
 

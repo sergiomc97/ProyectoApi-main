@@ -8,8 +8,13 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Windows;
 using System.Windows.Media.Imaging;
+using System.Reflection;
 
 namespace ProyectoApi.controller {
+
+    /// <summary>
+    /// Esta clase gestiona la base de datos.
+    /// </summary>
     public class ControllerBD {
 
         private SQLiteConnection conn;
@@ -19,16 +24,20 @@ namespace ProyectoApi.controller {
         /// <summary>
         /// Este método establece la conexión a la base de datos SQLite.
         /// </summary>
-        public void conectar() {
+        public void Conectar() {
+            string CaminoBD = Path.GetDirectoryName(Environment.ProcessPath);
+            string caminoarchivo = Path.Combine(CaminoBD, "Resources");
+            string caminoCompleto = Path.Combine(caminoarchivo, "ProyectoApi.db");
+
             if (conn != null) {
                 conn = null;
             }
             try {
+                conn = new SQLiteConnection("Data Source=" + caminoCompleto + "; Version=3; New = False");
+                conn.Open();
+            } catch (Exception) {
                 conn = new SQLiteConnection("Data Source= ..\\..\\..\\Resources\\ProyectoApi.db; Version=3 ;New = False");
                 conn.Open();
-            } catch (Exception ex) {
-
-                MessageBox.Show("error" + ex);
             }
 
         }
@@ -37,8 +46,8 @@ namespace ProyectoApi.controller {
         /// </summary>
         /// <param name="id">El ID del usuario a consultar.</param>
         /// <returns>El objeto Usuario correspondiente al ID especificado.</returns>
-        public Usuario consulta(int id) {
-            conectar();
+        public Usuario Consulta(int id) {
+            Conectar();
             string consulta = "SELECT * FROM User WHERE id= @id";
 
             comando = new SQLiteCommand(consulta, conn);
@@ -73,9 +82,9 @@ namespace ProyectoApi.controller {
         /// </summary>
         /// <returns>Una lista de objetos Usuario correspondientes a todos los usuarios de la tabla User.</returns>
         public List<Usuario> GetUsuarios() {
-            List<Usuario> usuarios = new List<Usuario>();
-            Usuario u = null;
-            conectar();
+            List<Usuario> usuarios = new();
+            Usuario u;
+            Conectar();
             string consulta = "SELECT * FROM User";
 
             comando = new SQLiteCommand(consulta, conn);
@@ -131,7 +140,7 @@ namespace ProyectoApi.controller {
         /// <param name="contrasena">La contraseña del usuario a comprobar.</param>
         /// <returns>El ID del usuario si las credenciales son correctas, -1 en caso contrario.</returns>
         public int ComprobarCredenciales(string usuario, string contrasena) {
-            conectar();
+            Conectar();
             int id = -1;
             string p = CifrarContrasena(contrasena);
             string consulta = "SELECT id FROM User WHERE Nick = @usuario and Pass = @pass";
@@ -168,7 +177,7 @@ namespace ProyectoApi.controller {
         /// <param name="esAdmin">Un valor entero que indica si el usuario es administrador (1) o no (0).</param>
 
         public void Create(string name, string email, string nick, string pass, int esAdmin) {
-            conectar();
+            Conectar();
             string insertQuery = "INSERT INTO User VALUES (@1, @2, @3, @4, @5, @6)";
 
             comando = new SQLiteCommand(insertQuery, conn);
@@ -196,7 +205,7 @@ namespace ProyectoApi.controller {
         /// </summary>
         /// <param name="id">El ID del usuario a eliminar.</param>
         public void DeleteUser(int id) {
-            conectar();
+            Conectar();
             string insertQuery = "delete from User where id=@1";
 
 
@@ -217,7 +226,7 @@ namespace ProyectoApi.controller {
         /// </summary>
         /// <param name="id">El ID del usuario cuyos favoritos se van a eliminar.</param>
         public void DeleteFav(int id) {
-            conectar();
+            Conectar();
             string insertQuery = "delete from Favoritos where user_id=@1";
 
             comando = new SQLiteCommand(insertQuery, conn);
@@ -239,7 +248,7 @@ namespace ProyectoApi.controller {
         /// <returns>El número de registros de favoritos correspondientes al usuario especificado.</returns>
         public int ContarFavoritos(int id) {
 
-            conectar();
+            Conectar();
             string consulta = "SELECT COUNT(imagen) FROM Favoritos WHERE user_id = @id";
             int numFav = 0;
             comando = new SQLiteCommand(consulta, conn);
@@ -264,7 +273,7 @@ namespace ProyectoApi.controller {
         /// <param name="u">El usuario asociado a la imagen.</param>
         public void InsertarImagen(BitmapImage img, Usuario u) {
             byte[] imagenBytes = ImageToByte(img);
-            conectar();
+            Conectar();
             string consultaSql = "INSERT INTO Favoritos Values(@1, @2, @3)";
 
             comando = new SQLiteCommand(consultaSql, conn);
@@ -291,12 +300,12 @@ namespace ProyectoApi.controller {
         /// <returns>Una lista de objetos BitmapImage que representan las imágenes obtenidas.</returns>
 
         public List<BitmapImage> ObtenerImagen(Usuario u) {
-            conectar();
+            Conectar();
             string consulta = "SELECT imagen FROM Favoritos WHERE user_id = @id";
 
             comando = new SQLiteCommand(consulta, conn);
             comando.Parameters.AddWithValue("@id", u.Id);
-            List<BitmapImage> imagenes = new List<BitmapImage>();
+            List<BitmapImage> imagenes = new();
 
 
 
@@ -329,17 +338,16 @@ namespace ProyectoApi.controller {
 
             encoder.Frames.Add(BitmapFrame.Create(bitmap));
 
-            using (var stream = new MemoryStream()) {
-                encoder.Save(stream);
-                return stream.ToArray();
-            }
+            using var stream = new MemoryStream();
+            encoder.Save(stream);
+            return stream.ToArray();
         }
         /// <summary>
         /// Convierte un objeto Stream a un objeto BitmapImage.
         /// </summary>
         /// <param name="ms">El objeto Stream a convertir.</param>
         /// <returns>Un objeto BitmapImage que representa la imagen.</returns>
-        public BitmapImage ToImage(Stream ms) {
+        public static BitmapImage ToImage(Stream ms) {
 
             var image = new BitmapImage();
             image.BeginInit();

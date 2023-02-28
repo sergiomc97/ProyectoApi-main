@@ -5,22 +5,22 @@ namespace ProyectoApi.Presentacion {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class login : Window {
+    public partial class Login : Window {
 
-        private ControllerBD cb = new ControllerBD();
+        private ControllerBD cb = new();
 
-        public login() {
+        public Login() {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e) {
-            if (user.Text != string.Empty && pass.Text != string.Empty) {
+            if (user.Text != string.Empty && pass.Password != string.Empty) {
 
-                int id = cb.ComprobarCredenciales(user.Text, pass.Text);
+                int id = cb.ComprobarCredenciales(user.Text, pass.Password);
 
                 if (id >= 0) {
 
-                    Window1 w = new Window1(cb.consulta(id));
+                    Window1 w = new(cb.Consulta(id));
                     w.Show();
                     this.Close();
 
@@ -65,15 +65,21 @@ namespace ProyectoApi.Presentacion {
             gridSignUp.Visibility = Visibility.Visible;
         }
 
-        private void registrarse_Click(object sender, RoutedEventArgs e) {
-            //añadir a la base de datos
-            if (NombreReg.Text != string.Empty && passReg.Text != string.Empty) {
-                cb.Create(NombreReg.Text, emailReg.Text, NickReg.Text, passReg.Text, 1);
-                gridSignUp.Visibility = Visibility.Collapsed;
-                gridOK.Visibility = Visibility.Visible;
+        private void Registrarse_Click(object sender, RoutedEventArgs e) {
+            if (passReg.Password == passreg2.Password) {
+                //añadir a la base de datos
+                if (NombreReg.Text != string.Empty && passReg.Password != string.Empty) {
+                    cb.Create(NombreReg.Text, emailReg.Text, NickReg.Text, passReg.Password, 1);
+                    gridSignUp.Visibility = Visibility.Collapsed;
+                    gridOK.Visibility = Visibility.Visible;
+                } else {
+                    MessageBox.Show("Rellena los campos");
+                }
             } else {
-                MessageBox.Show("Rellena los campos");
+                MessageBox.Show("Las contraseñas no coinciden");
+            
             }
+           
 
         }
 

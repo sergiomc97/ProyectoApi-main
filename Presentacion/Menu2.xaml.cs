@@ -79,10 +79,12 @@ namespace ProyectoApi.Presentacion {
 
             try {
                 Process.Start(url);
+
             } catch {
 
                 if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows)) {
                     url = url.Replace("&", "^&");
+
                     Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
                 } else if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux)) {
                     Process.Start("xdg-open", url);
