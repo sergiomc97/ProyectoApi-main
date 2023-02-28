@@ -133,6 +133,9 @@
   <data name="fav2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\fav2.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="gitLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\gitLogo.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="nasalization_rg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\nasalization-rg.otf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>

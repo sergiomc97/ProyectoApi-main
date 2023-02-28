@@ -1,5 +1,7 @@
 ﻿using ProyectoApi.model;
 using System;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -70,6 +72,26 @@ namespace ProyectoApi.Presentacion {
 
         private void fav_Click(object sender, RoutedEventArgs e) {
             miEvento?.Invoke(typeof(Favoritos));
+        }
+
+        private void btnAcercaDe_Click(object sender, RoutedEventArgs e) {
+            string url = "https://github.com/sergiomc97/ProyectoApi-main/blob/main/README.md";
+
+            try {
+                Process.Start(url);
+            } catch {
+
+                if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows)) {
+                    url = url.Replace("&", "^&");
+                    Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
+                } else if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux)) {
+                    Process.Start("xdg-open", url);
+                } else if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX)) {
+                    Process.Start("open", url);
+                } else {
+                    throw;
+                }
+            }
         }
     }
 }

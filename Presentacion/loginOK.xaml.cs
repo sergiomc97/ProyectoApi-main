@@ -1,6 +1,8 @@
 ﻿using ProyectoApi.controller;
 using ProyectoApi.model;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
 using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
@@ -103,5 +105,7 @@ namespace ProyectoApi.Presentacion {
         private void btn5_Click(object sender, RoutedEventArgs e) {
             cBd.InsertarImagen(ImagenActual, u);
         }
+
+
     }
 }

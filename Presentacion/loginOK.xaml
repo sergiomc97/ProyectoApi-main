@@ -102,17 +102,22 @@
                 </Grid>
             </Border>
         </Viewbox>
-        <Button
-            Name="btn5"
-            Grid.Row="1"
-            Grid.Column="2"
-            HorizontalAlignment="Center"
-            Background="Transparent"
-            BorderBrush="Transparent"
-            Click="btn5_Click"
-            Style="{DynamicResource BtnFav}">
-            <Image Source="/Resources/fav.png" />
-        </Button>
+        <Grid Grid.Row="1" Grid.Column="2">
+            <Button
+                Name="btn5"
+                Grid.Column="1"
+                HorizontalAlignment="Center"
+                Background="Transparent"
+                BorderBrush="Transparent"
+                Click="btn5_Click"
+                Style="{DynamicResource BtnFav}"
+                ToolTip="Añadir imagen a favoritos">
+                <Image Source="/Resources/fav.png" />
+            </Button>
+
+
+        </Grid>
+
 
         <Expander
             x:Name="expander"

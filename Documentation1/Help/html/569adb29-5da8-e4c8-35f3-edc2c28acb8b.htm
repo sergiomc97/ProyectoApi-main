@@ -1,313 +1,86 @@
-﻿<!DOCTYPE html >
-<html lang="es-ES">
+﻿<html>
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="Microsoft.Help.SelfBranded" content="true" />
+    <meta name="Language" content="es-es" />
+    <meta name="Microsoft.Help.Locale" content="es-es" />
+    <meta name="Microsoft.Help.TopicLocale" content="es-es" />
     <link rel="shortcut icon" href="../icons/favicon.ico" />
-    <link rel="stylesheet" href="../css/bulma.css" />
-    <link rel="stylesheet" href="../css/font-awesome.min.css" />
-    <link rel="stylesheet" href="../css/presentationStyle.css" />
-    <link rel="stylesheet" href="../css/vs.min.css" />
-    <script src="../scripts/jquery-3.5.1.min.js"></script>
-    <script src="../scripts/clipboard.min.js"></script>
-    <script src="../scripts/highlight.min.js"></script>
-    <script src="../scripts/presentationStyle.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/branding.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/branding-es-ES.css" />
+    <script type="text/javascript" src="../scripts/branding.js"></script>
     <title>ControllerBD Clase</title>
-    <meta name="Title" content="ControllerBD" />
-    <meta name="Help.Id" content="T:ProyectoApi.controller.ControllerBD" />
-    <meta name="Help.ContentType" content="Reference" />
+    <meta name="Title" content="ControllerBD Clase" />
+    <meta name="Microsoft.Help.Id" content="T:ProyectoApi.controller.ControllerBD" />
+    <meta name="Microsoft.Help.ContentType" content="Reference" />
+    <meta name="System.Keywords" content="ProyectoApi.controller.ControllerBD class" />
+    <meta name="System.Keywords" content="ControllerBD class" />
+    <meta name="Microsoft.Help.F1" content="ProyectoApi.controller.ControllerBD" />
+    <meta name="Microsoft.Help.F1" content="ControllerBD" />
     <meta name="container" content="ProyectoApi.controller" />
+    <meta name="file" content="569adb29-5da8-e4c8-35f3-edc2c28acb8b" />
     <meta name="guid" content="569adb29-5da8-e4c8-35f3-edc2c28acb8b" />
     <meta name="Description" content="summaryT:ProyectoApi.controller." />
-    <meta name="tocFile" content="../toc/IDB.xml" />
+    <link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" />
+    <script type="text/javascript" src="../scripts/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../scripts/branding-Website.js"></script>
+    <script type="text/javascript" src="../scripts/clipboard.min.js"></script>
   </head>
-  <body>
-    <div class="fixedLayout">
-      <div id="Header" class="fixedHeader">
-        <div class="pageHeader level mb-0 py-2 px-4">
-          <div id="TitleContainer" class="level-left">
-            <div class="level-item">
+  <body onload="SetDefaultLanguage('cs');">
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <div id="PageHeader" class="pageHeader">A Sandcastle Documented Class Library<form id="SearchForm" method="get" action="#" onsubmit="TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div>
+    <div class="pageBody">
+      <div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/3b81b9d1-9cc8-2d3a-9bac-52532c2f3afe.htm" title="A Sandcastle Documented Class Library" tocid="roottoc">A Sandcastle Documented Class Library</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/44674d4f-a0e5-665f-fb44-676d823b5dda.htm" title="ProyectoApi.controller" tocid="44674d4f-a0e5-665f-fb44-676d823b5dda">ProyectoApi.controller</a></div><div class="toclevel1 current" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/569adb29-5da8-e4c8-35f3-edc2c28acb8b.htm" title="ControllerBD Clase" tocid="569adb29-5da8-e4c8-35f3-edc2c28acb8b">ControllerBD Clase</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/40ad5a78-64de-4090-1dc5-507f9207b483.htm" title="ControllerBD Constructor" tocid="40ad5a78-64de-4090-1dc5-507f9207b483">ControllerBD Constructor</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/a057007d-a794-2e93-01c4-9559976f1755.htm" title="ControllerBD Métodos" tocid="a057007d-a794-2e93-01c4-9559976f1755">ControllerBD Métodos</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Arrastre para cambiar el tamaño" title="Arrastre para cambiar el tamaño" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Arrastre para cambiar el tamaño" title="Arrastre para cambiar el tamaño" /></div></div><div id="TopicContent" class="topicContent">
+        <table class="titleTable">
+          <tr>
+            <td class="logoColumn">
               <img src="../icons/Help.png" />
-            </div>
-            <div id="DocumentationTitle" class="level-item">A Sandcastle Documented Class Library</div>
-          </div>
-          <div id="LangFilterSearchContainer" class="level-right">
-            <div class="level-item">
-              <div class="dropdown is-hoverable">
-                <div class="dropdown-trigger">
-                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                    <span id="CurrentLanguage"></span>
-                    <span class="icon is-small">
-                      <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    </span>
-                  </button>
-                </div>
-                <div class="dropdown-menu" role="menu">
-                  <div id="LanguageSelections" class="dropdown-content">
-                    <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
-                    <a class="dropdown-item languageFilterItem" data-languageId="xaml">XAML</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="level-item">
-              <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
-                <div class="field">
-                  <div class="control has-icons-left">
-                    <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
-                    <span class="icon is-small is-left">
-                      <i class="fa fa-search"></i>
-                    </span>
-                    <button id="SearchButton" type="submit" class="is-hidden"></button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
+            </td>
+            <td class="titleColumn">
+              <h1>Controller<wbr />BD Clase</h1>
+            </td>
+          </tr>
+        </table>
+        <div class="summary">
+          <p class="missing">[Falta documentación &lt;summary&gt; para "T:ProyectoApi.controller.ControllerBD"]</p>
         </div>
-      </div>
-      <div class="fixedContent">
-        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
-          <ul id="TopicBreadcrumbs" />
-        </nav>
-        <div class="columns pl-5 pr-5 fixedContent">
-          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
-            <a id="ShowHideTOC">Show/Hide TOC</a>
-          </div>
-          <div id="TOCColumn" class="column is-hidden-mobile">
-            <nav class="toc">
-              <ul id="TableOfContents" class="toc-menu" />
-            </nav>
-          </div>
-          <div id="TopicContent" class="column content is-7">
-            <h1>Controller<wbr />BD Clase</h1>
-            <div class="summary">
-              <p class="missing">[Falta documentación &lt;summary&gt; para "T:ProyectoApi.controller.ControllerBD"]</p>
-            </div>
-            <h2 class="quickLinkHeader">
-              <span class="icon toggleSection" tabindex="0">
-                <i class="fa fa-angle-down"></i>
-              </span>Definition</h2>
-            <div id="IDBSection">
-              <strong>Espacio de nombres:</strong> <a href="44674d4f-a0e5-665f-fb44-676d823b5dda.htm">ProyectoApi.controller</a><br /><strong>Ensamblado:</strong> ProyectoApi (en ProyectoApi.exe) Versión: 1.0.0<br /><strong>XMLNS para XAML:</strong> No asignada a un xmlns.<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">ControllerBD</span></code></pre></div></div><dl class="inheritanceHierarchy"><dt>Inheritance</dt><dd><a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <span class="selflink">ControllerBD</span></dd></dl></div>
-            <h2 class="quickLinkHeader">
-              <span class="icon toggleSection" tabindex="0">
-                <i class="fa fa-angle-down"></i>
-              </span>Constructores</h2>
-            <div id="IDAEASection">
-              <table id="ConstructorList" class="table is-hoverable">
-                <tr>
-                  <td>
-                    <a href="40ad5a78-64de-4090-1dc5-507f9207b483.htm">ControllerBD</a>
-                  </td>
-                  <td>Inicializa una nueva instancia de la clase <span class="selflink">ControllerBD</span></td>
-                </tr>
-              </table>
-            </div>
-            <h2 class="quickLinkHeader">
-              <span class="icon toggleSection" tabindex="0">
-                <i class="fa fa-angle-down"></i>
-              </span>Métodos</h2>
-            <div id="IDBEASection">
-              <table id="MethodList" class="table is-hoverable">
-                <tr>
-                  <td>
-                    <a href="7c4953a2-1f44-f6d2-33be-a39215304684.htm">CifrarContrasena</a>
-                  </td>
-                  <td>
+        <div class="collapsibleAreaRegion">
+          <span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDDA')" onkeypress="SectionExpandCollapse_CheckKey('IDDA', event)" tabindex="0">
+            <img id="IDDAToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Jerarquía de herencia</span>
+        </div>
+        <div id="IDDASection" class="collapsibleSection">
+          <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">System<span id="LST21D2D1C3_0" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>Object</a>
+          <br />  <span class="selflink">ProyectoApi.controller<span id="LST21D2D1C3_1" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ControllerBD</span><br /></div>
+        <br />
+        <strong>Espacio de nombres:</strong> <a href="44674d4f-a0e5-665f-fb44-676d823b5dda.htm">ProyectoApi.controller</a><br /><strong>Ensamblado:</strong> ProyectoApi (en ProyectoApi.exe) Versión: 1.0.0<br /><strong>XMLNS para XAML:</strong> No asignada a un xmlns.<div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDB')" onkeypress="SectionExpandCollapse_CheckKey('IDB', event)" tabindex="0"><img id="IDBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Sintaxis</span></div><div id="IDBSection" class="collapsibleSection"><div id="IDAB" class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="IDAB_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="IDAB_copyCode" href="#" class="copyCodeSnippet" onclick="CopyToClipboard('IDAB');return false;" title="Copy">Copy</a></div></div><div id="IDAB_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">ControllerBD</span></pre></div></div></div></div><p>El tipo <span class="selflink">ControllerBD</span> expone a los siguientes miembros.</p><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDAEA')" onkeypress="SectionExpandCollapse_CheckKey('IDAEA', event)" tabindex="0"><img id="IDAEAToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Constructores</span></div><div id="IDAEASection" class="collapsibleSection"><table id="ConstructorList" class="members"><tr><th class="iconColumn"> </th><th>Nombre</th><th>Descripción</th></tr><tr><td><img src="../icons/pubMethod.gif" alt="Método público" title="Método público" /></td><td><a href="40ad5a78-64de-4090-1dc5-507f9207b483.htm">ControllerBD</a></td><td>Inicializa una nueva instancia de la clase <span class="selflink">ControllerBD</span></td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDBEA')" onkeypress="SectionExpandCollapse_CheckKey('IDBEA', event)" tabindex="0"><img id="IDBEAToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Métodos</span></div><div id="IDBEASection" class="collapsibleSection"><table id="MethodList" class="members"><tr><th class="iconColumn"> </th><th>Nombre</th><th>Descripción</th></tr><tr><td><img src="../icons/pubMethod.gif" alt="Método público" title="Método público" /><img src="../icons/Static.gif" alt="Miembro estático" title="Miembro estático" /></td><td><a href="7c4953a2-1f44-f6d2-33be-a39215304684.htm">CifrarContrasena</a></td><td>
             Este método cifra una contraseña utilizando el algoritmo SHA256.(sacado de stackoverflow)
-            </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="b9a9e5c4-d8ec-3b3a-c382-3f9e40d7fde0.htm">ComprobarCredenciales</a>
-                  </td>
-                  <td>
+            </td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Método público" title="Método público" /></td><td><a href="b9a9e5c4-d8ec-3b3a-c382-3f9e40d7fde0.htm">ComprobarCredenciales</a></td><td>
             Este método comprueba las credenciales de un usuario en la tabla User de la base de datos.
-            </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="219d563e-bf6a-a505-485c-eae60f985efe.htm">conectar</a>
-                  </td>
-                  <td>
+            </td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Método público" title="Método público" /></td><td><a href="219d563e-bf6a-a505-485c-eae60f985efe.htm">conectar</a></td><td>
             Este método establece la conexión a la base de datos SQLite.
-            </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="f3f02114-edf9-fd34-688c-d0efdf5370c4.htm">consulta</a>
-                  </td>
-                  <td>
+            </td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Método público" title="Método público" /></td><td><a href="f3f02114-edf9-fd34-688c-d0efdf5370c4.htm">consulta</a></td><td>
             Este método consulta un usuario por su ID en la tabla User de la base de datos.
-            </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="4a1f1a15-225f-cd16-d78b-c92ab3040c11.htm">ContarFavoritos</a>
-                  </td>
-                  <td>
+            </td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Método público" title="Método público" /></td><td><a href="4a1f1a15-225f-cd16-d78b-c92ab3040c11.htm">ContarFavoritos</a></td><td>
             Este método cuenta el número de registros de favoritos en la tabla Favoritos de la base de datos correspondientes a un usuario específico.
-            </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="22739397-c272-93b8-d8cf-31b0dd21c2b5.htm">Create</a>
-                  </td>
-                  <td>
+            </td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Método público" title="Método público" /></td><td><a href="22739397-c272-93b8-d8cf-31b0dd21c2b5.htm">Create</a></td><td>
             Este método crea un nuevo registro de usuario en la tabla User de la base de datos.
-            </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="4094eef4-9346-8f25-5fbc-fa2214b4f06a.htm">DeleteFav</a>
-                  </td>
-                  <td>
+            </td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Método público" title="Método público" /></td><td><a href="4094eef4-9346-8f25-5fbc-fa2214b4f06a.htm">DeleteFav</a></td><td>
             Este método elimina los favoritos de un usuario de la tabla Favoritos de la base de datos.
-            </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="31e18e61-4245-5a17-7089-ee473173f978.htm">DeleteUser</a>
-                  </td>
-                  <td>
+            </td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Método público" title="Método público" /></td><td><a href="31e18e61-4245-5a17-7089-ee473173f978.htm">DeleteUser</a></td><td>
             Este método elimina un registro de usuario de la tabla User de la base de datos.
-            </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)" target="_blank" rel="noopener noreferrer">Equals</a>
-                  </td>
-                  <td>Determines whether the specified object is equal to the current object.<br />(Se hereda de <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="https://learn.microsoft.com/dotnet/api/system.object.finalize#system-object-finalize" target="_blank" rel="noopener noreferrer">Finalize</a>
-                  </td>
-                  <td>Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br />(Se hereda de <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode" target="_blank" rel="noopener noreferrer">GetHashCode</a>
-                  </td>
-                  <td>Serves as the default hash function.<br />(Se hereda de <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype" target="_blank" rel="noopener noreferrer">GetType</a>
-                  </td>
-                  <td>Gets the <a href="https://learn.microsoft.com/dotnet/api/system.type" target="_blank" rel="noopener noreferrer">Type</a> of the current instance.<br />(Se hereda de <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="abd7cf29-a5a1-4e92-e5a2-c23ddd9ed173.htm">GetUsuarios</a>
-                  </td>
-                  <td>
+            </td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Método público" title="Método público" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)" target="_blank" rel="noopener noreferrer">Equals</a></td><td>Determines whether the specified object is equal to the current object.<br />(Se hereda de <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><img src="../icons/protMethod.gif" alt="Método protegido" title="Método protegido" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.object.finalize#system-object-finalize" target="_blank" rel="noopener noreferrer">Finalize</a></td><td>Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br />(Se hereda de <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Método público" title="Método público" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode" target="_blank" rel="noopener noreferrer">GetHashCode</a></td><td>Serves as the default hash function.<br />(Se hereda de <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Método público" title="Método público" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype" target="_blank" rel="noopener noreferrer">GetType</a></td><td>Gets the <a href="https://learn.microsoft.com/dotnet/api/system.type" target="_blank" rel="noopener noreferrer">Type</a> of the current instance.<br />(Se hereda de <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Método público" title="Método público" /></td><td><a href="abd7cf29-a5a1-4e92-e5a2-c23ddd9ed173.htm">GetUsuarios</a></td><td>
             Este método obtiene una lista de todos los usuarios almacenados en la tabla User de la base de datos.
-            </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="44d0f868-ef9a-c56f-5dcf-d4f42c260250.htm">ImageToByte</a>
-                  </td>
-                  <td>
+            </td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Método público" title="Método público" /><img src="../icons/Static.gif" alt="Miembro estático" title="Miembro estático" /></td><td><a href="44d0f868-ef9a-c56f-5dcf-d4f42c260250.htm">ImageToByte</a></td><td>
             Convierte una imagen BitmapImage a un arreglo de bytes. (sacado de stackoverflow)
-            </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="c1bd69d2-031a-0f8b-aa3b-729d910ae10c.htm">InsertarImagen</a>
-                  </td>
-                  <td>
+            </td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Método público" title="Método público" /></td><td><a href="c1bd69d2-031a-0f8b-aa3b-729d910ae10c.htm">InsertarImagen</a></td><td>
             Inserta una imagen en la base de datos de favoritos asociada a un usuario dado.
-            </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone" target="_blank" rel="noopener noreferrer">MemberwiseClone</a>
-                  </td>
-                  <td>Creates a shallow copy of the current <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>.<br />(Se hereda de <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="5c48ae9b-21ee-3235-1fb3-c51b74f39927.htm">ObtenerImagen</a>
-                  </td>
-                  <td>
+            </td></tr><tr><td><img src="../icons/protMethod.gif" alt="Método protegido" title="Método protegido" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone" target="_blank" rel="noopener noreferrer">MemberwiseClone</a></td><td>Creates a shallow copy of the current <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>.<br />(Se hereda de <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Método público" title="Método público" /></td><td><a href="5c48ae9b-21ee-3235-1fb3-c51b74f39927.htm">ObtenerImagen</a></td><td>
             Obtiene una lista de imágenes almacenadas en la base de datos de favoritos para un usuario dado.
-            </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="cc0fb2c4-312e-2bd0-d405-a7323420d67c.htm">ToImage</a>
-                  </td>
-                  <td>
+            </td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Método público" title="Método público" /></td><td><a href="cc0fb2c4-312e-2bd0-d405-a7323420d67c.htm">ToImage</a></td><td>
             Convierte un objeto Stream a un objeto BitmapImage.
-            </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring" target="_blank" rel="noopener noreferrer">ToString</a>
-                  </td>
-                  <td>Returns a string that represents the current object.<br />(Se hereda de <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
-                </tr>
-              </table>
-            </div>
-            <h2 class="quickLinkHeader">
-              <span class="icon toggleSection" tabindex="0">
-                <i class="fa fa-angle-down"></i>
-              </span>Vea también</h2>
-            <div id="seeAlsoSection">
-              <h4>Referencia</h4>
-              <div>
-                <a href="44674d4f-a0e5-665f-fb44-676d823b5dda.htm">Espacio de nombres ProyectoApi.controller</a>
-              </div>
-            </div>
-          </div>
-          <div id="InThisArticleColumn" class="column is-hidden-mobile">
-            <nav class="menu sticky is-hidden">
-              <p class="menu-label">
-                <strong>In This Article</strong>
-              </p>
-              <ul id="InThisArticleMenu" class="menu-list">
-                <li>
-                  <a class="quickLink">Definition</a>
-                </li>
-                <li>
-                  <a class="quickLink">Constructores</a>
-                </li>
-                <li>
-                  <a class="quickLink">Métodos</a>
-                </li>
-                <li>
-                  <a class="quickLink">Vea también</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
-        <div class="columns">
-          <div class="column"> 
-				</div>
-          <div class="column"> 
-				</div>
-        </div>
-      </footer>
+            </td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Método público" title="Método público" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring" target="_blank" rel="noopener noreferrer">ToString</a></td><td>Returns a string that represents the current object.<br />(Se hereda de <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('seeAlso')" onkeypress="SectionExpandCollapse_CheckKey('seeAlso', event)" tabindex="0"><img id="seeAlsoToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Vea también</span></div><div id="seeAlsoSection" class="collapsibleSection"><h4>Referencia</h4><div><a href="44674d4f-a0e5-665f-fb44-676d823b5dda.htm">Espacio de nombres ProyectoApi.controller</a></div></div></div>
     </div>
-    <script>$(function(){
-SetDefaultLanguage("cs");
-LoadTocFile(null, null);
-InitializeQuickLinks();
-
-$(".toggleSection" ).click(function () {
-    SectionExpandCollapse(this);
-});
-
-$(".toggleSection").keypress(function () {
-    SectionExpandCollapseCheckKey(this, event)
-});
-hljs.highlightAll();
-});</script>
+    <div id="PageFooter" class="pageFooter" />
   </body>
 </html>

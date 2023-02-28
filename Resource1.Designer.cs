@@ -113,6 +113,16 @@ namespace ProyectoApi {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Byte[].
         /// </summary>
+        public static byte[] gitLogo {
+            get {
+                object obj = ResourceManager.GetObject("gitLogo", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
         public static byte[] NASA_logo_svg {
             get {
                 object obj = ResourceManager.GetObject("NASA_logo_svg", resourceCulture);
