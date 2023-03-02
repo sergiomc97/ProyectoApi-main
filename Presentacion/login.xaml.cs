@@ -1,5 +1,6 @@
 ﻿using ProyectoApi.controller;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace ProyectoApi.Presentacion {
     /// <summary>
@@ -30,24 +31,9 @@ namespace ProyectoApi.Presentacion {
 
                 }
             }
-
-
-
-
-
-
-
-
         }
 
         private void CheckBox_Checked(object sender, RoutedEventArgs e) {
-
-        }
-
-
-        private void Grid_Loaded(object sender, RoutedEventArgs e) {
-
-
 
         }
 
@@ -66,10 +52,14 @@ namespace ProyectoApi.Presentacion {
         }
 
         private void Registrarse_Click(object sender, RoutedEventArgs e) {
+            int esAdmin = 0;
+            if ((bool)checkAdmin.IsChecked) {
+                esAdmin = 1;
+            }
             if (passReg.Password == passreg2.Password) {
                 //añadir a la base de datos
                 if (NombreReg.Text != string.Empty && passReg.Password != string.Empty) {
-                    cb.Create(NombreReg.Text, emailReg.Text, NickReg.Text, passReg.Password, 1);
+                    cb.Create(NombreReg.Text, emailReg.Text, NickReg.Text, passReg.Password, esAdmin);
                     gridSignUp.Visibility = Visibility.Collapsed;
                     gridOK.Visibility = Visibility.Visible;
                 } else {

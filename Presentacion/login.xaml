@@ -163,7 +163,7 @@
 
         </Grid>
 
-        <Grid x:Name="gridSignUp" Loaded="Grid_Loaded" Visibility="Collapsed">
+        <Grid x:Name="gridSignUp" Visibility="Collapsed">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
@@ -200,30 +200,27 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="10" />
+                    <RowDefinition Height="2*" />
+                    <RowDefinition Height="20" />
                     <RowDefinition Height="*" />
-                    <RowDefinition Height="10" />
                     <RowDefinition Height="*" />
-                    <RowDefinition Height="10" />
+                    <RowDefinition Height="20" />
                     <RowDefinition Height="*" />
-                    <RowDefinition Height="10" />
                     <RowDefinition Height="*" />
-                    <RowDefinition Height="10" />
+                    <RowDefinition Height="20" />
                     <RowDefinition Height="*" />
-                    <RowDefinition Height="10" />
                     <RowDefinition Height="*" />
-                    <RowDefinition Height="10" />
+                    <RowDefinition Height="20" />
                     <RowDefinition Height="*" />
-                    <RowDefinition Height="10" />
                     <RowDefinition Height="*" />
-                    <RowDefinition Height="10" />
+                    <RowDefinition Height="20" />
                     <RowDefinition Height="*" />
-                    <RowDefinition Height="10" />
                     <RowDefinition Height="*" />
-                    <RowDefinition Height="10" />
+                    <RowDefinition Height="20" />
                     <RowDefinition Height="*" />
-                    <RowDefinition Height="10" />
+                    <RowDefinition Height="20" />
                     <RowDefinition Height="*" />
+                    <RowDefinition Height="20" />
                 </Grid.RowDefinitions>
 
                 <Grid.Effect>
@@ -234,104 +231,112 @@
                 </Grid.Effect>
 
                 <Label
-                    Grid.Row="1"
-                    Grid.Column="1"
-                    Width="531"
-                    Height="47"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    HorizontalAlignment="Left"
                     Content="Registro"
-                    FontSize="18"
+                    FontSize="30"
                     Style="{StaticResource lablLogin}" />
                 <Label
-                    Grid.Row="3"
+                    Grid.Row="2"
                     Grid.Column="1"
                     Content="NOMBRE"
                     Style="{StaticResource lablLogin}" />
                 <TextBox
                     x:Name="NombreReg"
-                    Grid.Row="5"
+                    Grid.Row="3"
                     Grid.Column="1"
-                    Height="35"
                     Margin="0"
                     Style="{StaticResource txtLoginBack}" />
+
+
                 <Label
-                    Grid.Row="7"
+                    Grid.Row="5"
                     Grid.Column="1"
                     Content="EMAIL"
                     Style="{StaticResource lablLogin}" />
                 <TextBox
                     x:Name="emailReg"
-                    Grid.Row="9"
+                    Grid.Row="6"
                     Grid.Column="1"
-                    Height="35"
                     Style="{StaticResource txtLoginBack}" />
+
+
                 <Label
-                    Grid.Row="11"
+                    Grid.Row="8"
                     Grid.Column="1"
                     Height="35"
                     Content="NICK"
                     Style="{StaticResource lablLogin}" />
                 <TextBox
                     x:Name="NickReg"
-                    Grid.Row="13"
+                    Grid.Row="9"
                     Grid.Column="1"
-                    Height="35"
                     Style="{StaticResource txtLoginBack}" />
+
+
                 <Label
-                    Grid.Row="15"
+                    Grid.Row="11"
                     Grid.Column="1"
                     Height="35"
                     Content="CONTRASEÑA"
                     Style="{StaticResource lablLogin}" />
                 <PasswordBox
                     x:Name="passReg"
-                    Grid.Row="17"
+                    Grid.Row="12"
                     Grid.Column="1"
-                    Height="35"
                     Style="{StaticResource passLoginBack}" />
+
+
                 <Label
-                    Grid.Row="19"
+                    Grid.Row="14"
                     Grid.Column="1"
-                    Height="35"
                     Content="REPITE CONTRASEÑA"
                     Style="{StaticResource lablLogin}" />
                 <PasswordBox
                     x:Name="passreg2"
-                    Grid.Row="21"
+                    Grid.Row="15"
                     Grid.Column="1"
-                    Height="35"
                     Style="{StaticResource passLoginBack}" />
 
 
-
-
-
+                <CheckBox
+                    x:Name="checkAdmin"
+                    Grid.Row="17"
+                    Grid.Column="1"
+                    Height="35"
+                    Content="Es administrador"
+                    FontFamily="Nasalization Rg"
+                    FontSize="14"
+                    Foreground="#5DECBF">
+                    <CheckBox.Background>
+                        <SolidColorBrush Opacity="0.1" Color="#5DECBF" />
+                    </CheckBox.Background>
+                </CheckBox>
 
 
                 <Button
-                    Grid.Row="23"
+                    Grid.Row="19"
                     Grid.Column="1"
                     Width="202"
-                    Height="35"
                     HorizontalAlignment="Left"
                     Click="Button_Click_2"
                     Content="Volver"
                     Style="{StaticResource btnLogin}" />
                 <Button
                     x:Name="registrarse"
-                    Grid.Row="23"
+                    Grid.Row="19"
                     Grid.Column="1"
                     Width="202"
-                    Height="35"
                     HorizontalAlignment="Right"
                     Click="Registrarse_Click"
-                    Content="Sign Up"
+                    Content="Registrarse"
                     Style="{StaticResource btnLogin}" />
             </Grid>
         </Grid>
 
-        <Grid
-            x:Name="gridOK"
-            Loaded="Grid_Loaded">
+        <Grid x:Name="gridOK">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
@@ -378,8 +383,7 @@
                     <RowDefinition Height="*" />
                     <RowDefinition Height="10" />
                     <RowDefinition Height="*" />
-                    <RowDefinition Height="10" />
-                    <RowDefinition Height="*" />
+
                     <RowDefinition Height="10" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
@@ -393,17 +397,16 @@
 
                 <Label
                     Grid.Row="1"
-                    Grid.Column="1"
-                    Width="531"
-                    Height="47"
-                    Content="Sign In"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    Content="Inicio de sesion"
                     FontSize="32"
                     Style="{StaticResource lablLogin}" />
                 <Label
                     Grid.Row="3"
                     Grid.Column="1"
-                    Height="35"
                     Content="USUARIO"
+                    FontSize="20"
                     Style="{StaticResource lablLogin}" />
                 <TextBox
                     x:Name="user"
@@ -415,8 +418,8 @@
                 <Label
                     Grid.Row="7"
                     Grid.Column="1"
-                    Height="35"
                     Content="CONTRASEÑA"
+                    FontSize="20"
                     Style="{StaticResource lablLogin}" />
                 <PasswordBox
                     x:Name="pass"
@@ -424,19 +427,7 @@
                     Grid.Column="1"
                     Height="35"
                     Style="{StaticResource passLoginBack}" />
-                <CheckBox
-                    Grid.Row="11"
-                    Grid.Column="1"
-                    Height="35"
-                    Checked="CheckBox_Checked"
-                    Content="Acepto los terminos y condiciones"
-                    FontFamily="Century Gothic"
-                    FontSize="18"
-                    Foreground="#5DECBF">
-                    <CheckBox.Background>
-                        <SolidColorBrush Opacity="0.1" Color="#5DECBF" />
-                    </CheckBox.Background>
-                </CheckBox>
+
                 <Button
                     Grid.Row="13"
                     Grid.Column="1"
@@ -444,7 +435,7 @@
                     Height="35"
                     HorizontalAlignment="Left"
                     Click="Button_Click"
-                    Content="Sign In"
+                    Content="Iniciar sesion"
                     Style="{StaticResource btnLogin}" />
                 <Button
                     x:Name="SignUp"
@@ -454,7 +445,7 @@
                     Height="35"
                     HorizontalAlignment="Right"
                     Click="SignUp_Click"
-                    Content="Sign Up"
+                    Content="Registrarse"
                     Style="{StaticResource btnLogin}" />
             </Grid>
         </Grid>

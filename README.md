@@ -1,50 +1,36 @@
 
 # Proyecto API NASA
 
-Aplicacion WPF de la API de la NASA para mostrar y obtener imágenes y datos astronómicos. Podrás navegar fácilmente por la aplicación y acceder a la información de tu interés.
+La aplicación Proyecto API NASA es una plataforma de acceso a la información astronómica y a las imágenes de la NASA. Ofrece una experiencia de navegación fácil para encontrar la información deseada y podrás visualizar imágenes espectaculares de la NASA.
 
-La aplicación proporciona varias funciones útiles, podrás visualizar imágenes espectaculares de la NASA, entre otras:
 
 # -Asteroids - NeoWs
+En la sección Asteroids - NeoWs, podrás encontrar información detallada sobre asteroides cercanos a la Tierra, incluyendo su tamaño, velocidad y distancia. En la página de Asteroids, se muestran los datos más relevantes de una colección de asteroides, y se puede cambiar de asteroide haciendo clic en el botón "Siguiente".
 
-Esta sección de la API de la NASA proporciona información sobre asteroides cercanos a la Tierra. Funcion incluida:
-
--   Visualización de información detallada sobre un asteroide específico, como su tamaño, velocidad y distancia a la Tierra.
-### Uso Pagina Asteroids:
-En esta pagina se muestran los datos mas relevantes spbre una coleccion de asteroides, haciendo click en el boton Siguiente se puede ir cambiando de asteroide. 
-### Screenshots Asteroids
-
+### Screenshot Asteroids
 ![App Screenshot](https://github.com/sergiomc97/ProyectoApi-main/blob/main/capturas/Captura7.png?raw=true)
 
+
+
 # -Earth
-La sección de la API de la NASA dedicada a tomar imagenes a la Tierra.Las imágenes de Landsat se proporcionan al público como un proyecto conjunto entre la NASA y el USGS. Esta API funciona con la API de Google Earth Engine y actualmente solo admite imágenes de Landsat 8 con nitidez panorámica. Este punto final recupera la imagen de Landsat 8 para la ubicación y la fecha proporcionadas. Es posible que el recurso solicitado no esté disponible para la fecha exacta de la solicitud. Funcion incluida:
+La sección Earth de la API de la NASA proporciona imágenes de la Tierra, que pueden buscarse por ubicación. En la página Earth, puedes buscar una ciudad en el cuadro de búsqueda, seleccionarla en el ComboBox y se mostrará una imagen de la vista satelital de la ubicación seleccionada.
 
--   Búsqueda de imágenes de la Tierra por ubicación.
-### Uso Pagina EARTH:
-Podemos buscar en el cuadro de busqueda una ciudad, seleccionarla en el ComboBox y aparecera una imagen de la vista satelital de la ubicacion seleccionada
-### Screenshots EARTH
-
+### Screenshot EARTH
 ![App Screenshot](https://github.com/sergiomc97/ProyectoApi-main/blob/main/capturas/Captura8.png?raw=true)
 
+
 # -EPIC API
-La API de la NASA EPIC proporciona imágenes espectaculares de la Tierra desde una perspectiva única.Funcion incluida:
+La API EPIC de la NASA proporciona imágenes de la Tierra desde una perspectiva única, desde el punto de vista del satélite DSCOVR. En la página EPIC, se muestra una imagen de la Tierra, y al hacer clic en el botón, la Tierra gira.
 
--   Visualización de imágenes de la Tierra desde el punto de vista del satélite DSCOVR.
--   Creación de animaciones a partir de imágenes tomadas en diferentes momentos.
-### Uso Pagina EPIC:
-En esta pagina, se muestra una imagen de la tierra, al hacer click en el boton, la tierra va girando.
-### Screenshots EPIC
-
+### Screenshot EPIC
 ![App Screenshot](https://github.com/sergiomc97/ProyectoApi-main/blob/main/capturas/Captura9.png?raw=true)
 
 
 # -Mars Rover Photos: 
-Esta sección de la API de la NASA proporciona imágenes tomadas por los rovers que exploran Marte. Funciones incluidas:
--   Búsqueda de imágenes por fecha o cámara.
--   Visualización de imágenes en alta resolución de la superficie de Marte.
+La sección Mars Rover Photos de la API de la NASA proporciona imágenes de la superficie de Marte, tomadas por los rovers que exploran el planeta. En la página Rover, puedes seleccionar una fecha y una cámara del rover Curiosity, y se mostrarán fotos de Marte. También se puede avanzar y retroceder entre las distintas fotos devueltas de la API usando los botones anterior y siguiente.
 
 ### Uso Pagina ROVER:
-En esta pagina, podemos seleccionar una fecha y camara del rover curiosity en marte y nos mostrara fotos de marte. Las camaras disponibles son:
+Las camaras disponibles son:
 
 -   FHAZ: Cámara frontal para evitar peligros
 -   RHAZ: Cámara trasera para evitar peligros
@@ -54,19 +40,13 @@ En esta pagina, podemos seleccionar una fecha y camara del rover curiosity en ma
 -   MARDI: Cámara de descenso a marte
 -   NAVCAM: Cámara de navegación
 
-Se puede avanzar y retroceder entre las distintas fotos devueltas de la api usando los botones anterior y siguiente.
-### Screenshots ROVER
+### Screenshot ROVER
 
 ![App Screenshot](https://github.com/sergiomc97/ProyectoApi-main/blob/main/capturas/Captura10.png?raw=true)
 
 # -APOD (Astronomy Picture of the Day) 
-Es una sección muy popular de la API de la NASA que proporciona una imagen diferente de nuestro universo cada día, junto con una explicación escrita por un astrónomo profesional.
--   Búsqueda de imágenes de APOD por fecha.
-
-### Uso Pagina APOD:
-En esta pagina, se muestra la imagen astronomica del dia, ademas te permite seleccionar otra fecha.
-### Screenshots APOD
-
+La sección APOD (Astronomy Picture of the Day) es muy popular en la API de la NASA y proporciona una imagen diferente de nuestro universo cada día, junto con una explicación escrita por un astrónomo profesional. En la página APOD, se muestra la imagen astronómica del día, y se puede seleccionar otra fecha.
+### Screenshot APOD
 ![App Screenshot](https://github.com/sergiomc97/ProyectoApi-main/blob/main/capturas/Captura5.png?raw=true)
 
 ## Capturas del Login:

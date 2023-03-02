@@ -17,6 +17,11 @@ namespace ProyectoApi.Presentacion {
         private Asteroids a;
         private ROVER r;
         private Admin admin;
+
+        /// <summary>
+        /// Constructor de la clase <see cref="Window1"/>.
+        /// </summary>
+        /// <param name="u">Usuario que ha iniciado sesión.</param>
         public Window1(Usuario u) {
             InitializeComponent();
             this.u = u;
@@ -31,6 +36,11 @@ namespace ProyectoApi.Presentacion {
             m.miEvento += MiEventoEventHandler;
             this.Content = l;
         }
+
+        /// <summary>
+        /// Manejador del evento <see cref="Menu2.miEvento"/> que cambia el contenido de la ventana principal según la página solicitada.
+        /// </summary>
+        /// <param name="tipoPagina">Tipo de página solicitada.</param>
         public void MiEventoEventHandler(Type tipoPagina) {
 
 

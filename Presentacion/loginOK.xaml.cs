@@ -32,7 +32,10 @@ namespace ProyectoApi.Presentacion {
 
         }
 
-
+        /// <summary>
+        /// Si existe un objeto "Menu2" en el padre del objeto actual, se elimina y se agrega al control "UControl".
+        /// A continuación, obtiene las imágenes favoritas del usuario actual de la base de datos y establece la primera imagen como el fondo de la aplicación.
+        /// </summary>
 
         private async void Grid_LoadedAsync(object sender, RoutedEventArgs e) {
             if (m.Parent != null) {

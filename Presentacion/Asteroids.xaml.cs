@@ -3,6 +3,7 @@ using ProyectoApi.model;
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace ProyectoApi.Presentacion {
     /// <summary>
@@ -23,7 +24,10 @@ namespace ProyectoApi.Presentacion {
             this.u = u;
         }
 
-
+        /// <summary>
+        /// Si existe un objeto "Menu2" en el padre del objeto actual, se elimina y se agrega al control "UControl".
+        /// A continuación, obtiene las imágenes favoritas del usuario actual de la base de datos y establece la primera imagen como el fondo de la aplicación.
+        /// </summary>
         private async void Grid_LoadedAsync(object sender, RoutedEventArgs e) {
 
             if (m.Parent != null) {
@@ -42,6 +46,13 @@ namespace ProyectoApi.Presentacion {
 
         public void SetLabel(Asteroide a) {
 
+            if (a.Peligroso == "True") {
+                peligrosoGrid.Background = (SolidColorBrush)new BrushConverter().ConvertFrom("#B25964");
+
+            } else {
+                peligrosoGrid.Background = (SolidColorBrush)new BrushConverter().ConvertFrom("#56B7D3");
+            }
+
             nombre.Text = a.Name;
 
             id.Text = a.Id;
@@ -57,6 +68,7 @@ namespace ProyectoApi.Presentacion {
             cuerpoOrbit.Text = a.CuerpoOr;
 
             veces.Text = a.NumVeces;
+
         }
 
 

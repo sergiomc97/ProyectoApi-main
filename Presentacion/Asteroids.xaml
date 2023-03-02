@@ -74,8 +74,7 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     Content="Nombre"
-                    FontFamily="Cascadia Mono SemiBold"
-                    FontSize="20" />
+                    Style="{StaticResource LabelRover}" />
                 <TextBlock
                     x:Name="nombre"
                     Grid.Row="2"
@@ -84,7 +83,6 @@
                     Background="{x:Null}"
                     FontFamily="Cascadia Code Light"
                     FontSize="16"
-                    Text="lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
                     TextWrapping="Wrap" />
 
             </Grid>
@@ -111,8 +109,7 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     Content="Id"
-                    FontFamily="Cascadia Mono SemiBold"
-                    FontSize="20" />
+                    Style="{StaticResource LabelRover}" />
                 <TextBlock
                     x:Name="id"
                     Grid.Row="2"
@@ -121,7 +118,6 @@
                     Background="{x:Null}"
                     FontFamily="Cascadia Code Light"
                     FontSize="16"
-                    Text="lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
                     TextWrapping="Wrap" />
             </Grid>
             <!--<Label Content="distancia" />-->
@@ -146,8 +142,7 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     Content="Tamaño"
-                    FontFamily="Cascadia Mono SemiBold"
-                    FontSize="20" />
+                    Style="{StaticResource LabelRover}" />
                 <TextBlock
                     x:Name="distancia"
                     Grid.Row="2"
@@ -156,11 +151,11 @@
                     Background="{x:Null}"
                     FontFamily="Cascadia Code Light"
                     FontSize="16"
-                    Text="lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
                     TextWrapping="Wrap" />
             </Grid>
             <!--<Label Content="peligroso" />-->
             <Grid
+                x:Name="peligrosoGrid"
                 Grid.Row="1"
                 Grid.Column="7"
                 Background="#56B7D3">
@@ -180,8 +175,7 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     Content="¿Es peligroso?"
-                    FontFamily="Cascadia Mono SemiBold"
-                    FontSize="20" />
+                    Style="{StaticResource LabelRover}" />
                 <TextBlock
                     x:Name="peligroso"
                     Grid.Row="2"
@@ -190,7 +184,6 @@
                     Background="{x:Null}"
                     FontFamily="Cascadia Code Light"
                     FontSize="16"
-                    Text="lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
                     TextWrapping="Wrap" />
             </Grid>
             <!--<Label Content="fecha" />-->
@@ -214,8 +207,7 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     Content="Fecha vista"
-                    FontFamily="Cascadia Mono SemiBold"
-                    FontSize="18" />
+                    Style="{StaticResource LabelRover}" />
                 <TextBlock
                     x:Name="fecha"
                     Grid.Row="2"
@@ -223,7 +215,6 @@
                     VerticalAlignment="Top"
                     FontFamily="Cascadia Code Light"
                     FontSize="16"
-                    Text="lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
                     TextWrapping="Wrap" />
             </Grid>
             <!--<Label Content="velocidad" />-->
@@ -247,8 +238,7 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     Content="Velocidad"
-                    FontFamily="Cascadia Mono SemiBold"
-                    FontSize="20" />
+                    Style="{StaticResource LabelRover}" />
                 <TextBlock
                     x:Name="velocidad"
                     Grid.Row="2"
@@ -257,7 +247,6 @@
                     Background="{x:Null}"
                     FontFamily="Cascadia Code Light"
                     FontSize="16"
-                    Text="lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
                     TextWrapping="Wrap" />
             </Grid>
 
@@ -282,8 +271,7 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     Content="Cuerpo que orbita"
-                    FontFamily="Cascadia Mono SemiBold"
-                    FontSize="20" />
+                    Style="{StaticResource LabelRover}" />
                 <TextBlock
                     x:Name="cuerpoOrbit"
                     Grid.Row="2"
@@ -292,7 +280,6 @@
                     Background="{x:Null}"
                     FontFamily="Cascadia Code Light"
                     FontSize="16"
-                    Text="lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
                     TextWrapping="Wrap" />
             </Grid>
             <!--<Label Content="veces visto" />-->
@@ -316,8 +303,7 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     Content="Veces visto"
-                    FontFamily="Cascadia Mono SemiBold"
-                    FontSize="20" />
+                    Style="{StaticResource LabelRover}" />
                 <TextBlock
                     x:Name="veces"
                     Grid.Row="2"
@@ -326,7 +312,6 @@
                     Background="{x:Null}"
                     FontFamily="Cascadia Code Light"
                     FontSize="16"
-                    Text="lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
                     TextWrapping="Wrap" />
             </Grid>
 

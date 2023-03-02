@@ -50,7 +50,7 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     Content="Seleccionar usuario:"
-                    FontSize="14"
+                    FontSize="16"
                     Foreground="#444655"
                     Style="{StaticResource lablLogin}" />
                 <Border
@@ -155,7 +155,7 @@
                     Grid.Row="1"
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
-                    Content="Id"
+                    Content="Nick"
                     FontSize="20"
                     Foreground="Black"
                     Style="{StaticResource lablLogin}" />
