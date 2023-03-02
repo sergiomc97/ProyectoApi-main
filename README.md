@@ -313,6 +313,3 @@ La sección APOD (Astronomy Picture of the Day) es muy popular en la API de la N
             </td>
               </tbody></table>
 
-## Esquema base de datos
-
-![App Screenshot](https://github.com/sergiomc97/ProyectoApi-main/blob/main/capturas/Captura11.png?raw=true)
