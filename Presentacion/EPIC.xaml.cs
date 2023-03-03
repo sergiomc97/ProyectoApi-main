@@ -1,6 +1,8 @@
-﻿using ProyectoApi.controller;
+﻿using Microsoft.Win32;
+using ProyectoApi.controller;
 using ProyectoApi.model;
 using System.Collections.Generic;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
@@ -63,6 +65,22 @@ namespace ProyectoApi.Presentacion {
 
         private void btn5_Click(object sender, RoutedEventArgs e) {
             cBd.InsertarImagen(ImagenActual, u);
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e) {
+
+            SaveFileDialog save = new SaveFileDialog();
+            save.Title = "Guardar imagen como ";
+            save.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+            if (ImagenActual != null) {
+                if (save.ShowDialog() == true) {
+                    JpegBitmapEncoder jpg = new JpegBitmapEncoder();
+                    jpg.Frames.Add(BitmapFrame.Create(ImagenActual));
+                    using (Stream stm = File.Create(save.FileName)) {
+                        jpg.Save(stm);
+                    }
+                }
+            }
         }
     }
 }

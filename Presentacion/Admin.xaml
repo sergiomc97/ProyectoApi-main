@@ -36,7 +36,8 @@
             Padding="3"
             Background="#A8AABC"
             BorderThickness="1"
-            CornerRadius="12,12,12,12">
+            CornerRadius="12,12,12,12"
+            ToolTip="Selecciona un usuario">
 
             <Grid>
                 <Grid.ColumnDefinitions>

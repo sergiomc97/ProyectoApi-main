@@ -22,7 +22,11 @@
             <ColumnDefinition Width="2*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-
+        <Grid.ContextMenu>
+            <ContextMenu>
+                <MenuItem Click="MenuItem_Click" Header="Guardar imagen" />
+            </ContextMenu>
+        </Grid.ContextMenu>
         <Border
             Grid.Row="1"
             Grid.Column="1"
@@ -37,7 +41,8 @@
                     Background="Transparent"
                     Click="girar_Click"
                     Content="GIRAR"
-                    Style="{StaticResource btnStyle}" />
+                    Style="{StaticResource btnStyle}"
+                    ToolTip="GIRAR" />
             </Grid>
         </Border>
 
@@ -117,10 +122,10 @@
             Grid.Row="1"
             Grid.Column="2"
             HorizontalAlignment="Center"
-            Background="Transparent"
-            BorderBrush="Transparent"
             Click="btn5_Click"
-            Style="{DynamicResource BtnFav}">
+            Style="{StaticResource BtnFav}"
+            ToolTip="Añadir imagen a favoritos">
+
             <Image Source="/Resources/fav.png" />
         </Button>
 

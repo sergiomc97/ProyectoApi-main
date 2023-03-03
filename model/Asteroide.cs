@@ -8,10 +8,6 @@
         private string id;
         private string km;
         private string peligroso;
-        private string fecha;
-        private string velocidad;
-        private string cuerpoOr;
-        private string numVeces;
 
         /// <summary>
         /// Constructor que inicializa todas las propiedades del asteroide.
@@ -25,15 +21,12 @@
         /// <param name="cuerpoOr">El cuerpo celeste alrededor del cual orbita el asteroide.</param>
         /// <param name="numVeces">El número de veces que el asteroide ha sido observado.</param>
 
-        public Asteroide(string name, string id, string km, string peligroso, string fecha, string velocidad, string cuerpoOr, string numVeces) {
+        public Asteroide(string name, string id, string km, string peligroso) {
             this.name = name;
             this.id = id;
             this.km = km;
             this.peligroso = peligroso;
-            this.fecha = fecha;
-            this.velocidad = velocidad;
-            this.cuerpoOr = cuerpoOr;
-            this.numVeces = numVeces;
+          
 
         }
 
@@ -41,9 +34,6 @@
         public string Id { get => id; set => id = value; }
         public string Km { get => km; set => km = value; }
         public string Peligroso { get => peligroso; set => peligroso = value; }
-        public string Fecha { get => fecha; set => fecha = value; }
-        public string Velocidad { get => velocidad; set => velocidad = value; }
-        public string CuerpoOr { get => cuerpoOr; set => cuerpoOr = value; }
-        public string NumVeces { get => numVeces; set => numVeces = value; }
+
     }
 }

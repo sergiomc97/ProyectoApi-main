@@ -20,7 +20,11 @@
             <ColumnDefinition Width="2*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-
+        <Grid.ContextMenu>
+            <ContextMenu>
+                <MenuItem Click="MenuItem_Click" Header="Guardar imagen" />
+            </ContextMenu>
+        </Grid.ContextMenu>
         <Border
             Grid.Row="1"
             Grid.Column="1"
@@ -28,7 +32,8 @@
             Padding="3"
             Background="#A8AABC"
             BorderThickness="1"
-            CornerRadius="12,12,12,12">
+            CornerRadius="12,12,12,12"
+            ToolTip="Selecciona una ciudad del comboBox">
             <Grid Grid.Row="1" Grid.Column="1">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
@@ -145,10 +150,10 @@
             Grid.Row="1"
             Grid.Column="2"
             HorizontalAlignment="Center"
-            Background="Transparent"
-            BorderBrush="Transparent"
             Click="btn5_Click"
-            Style="{DynamicResource BtnFav}">
+            Style="{StaticResource BtnFav}"
+            ToolTip="Añadir imagen a favoritos">
+
             <Image Source="/Resources/fav.png" />
         </Button>
 

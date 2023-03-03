@@ -4,8 +4,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:uc="clr-namespace:ProyectoApi.Presentacion"
-    xmlns:xrpb="http://XamlRadialProgressBar/DotNet"
     Title="login"
     d:DesignHeight="620"
     d:DesignWidth="1502"
@@ -24,6 +22,34 @@
             <ColumnDefinition Width="2*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
+        <Image
+            x:Name="imgActual"
+            Grid.Row="0"
+            Grid.Column="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center" />
+        <Image
+            x:Name="imgAnt"
+            Grid.Row="0"
+            Grid.Column="0"
+            Height="300"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center">
+            <Image.BitmapEffect>
+                <BlurBitmapEffect KernelType="Box" Radius="4" />
+            </Image.BitmapEffect>
+        </Image>
+        <Image
+            x:Name="imgSig"
+            Grid.Row="0"
+            Grid.Column="2"
+            Height="300"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center">
+            <Image.BitmapEffect>
+                <BlurBitmapEffect KernelType="Box" Radius="4" />
+            </Image.BitmapEffect>
+        </Image>
 
         <Border
             Grid.Row="1"
@@ -33,12 +59,24 @@
             BorderThickness="1"
             CornerRadius="12,12,12,12">
             <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
 
                 <Button
                     x:Name="Siguiente"
+                    Grid.Column="1"
                     Background="Transparent"
-                    Click="girar_Click"
-                    Content="GIRAR"
+                    Click="Siguiente_Click"
+                    Content="SIGUIENTE"
+                    Style="{StaticResource btnStyle}" />
+                <Button
+                    x:Name="anterior"
+                    Grid.Column="0"
+                    Background="Transparent"
+                    Click="anterior_Click"
+                    Content="ANTERIOR"
                     Style="{StaticResource btnStyle}" />
             </Grid>
         </Border>
@@ -76,6 +114,7 @@
             </Expander.Header>
             <Grid x:Name="UControl" />
         </Expander>
+
 
 
     </Grid>

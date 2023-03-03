@@ -9,7 +9,10 @@
     d:DesignHeight="620"
     d:DesignWidth="1502"
     mc:Ignorable="d">
-    <Grid x:Name="grid" Loaded="Grid_LoadedAsync">
+    <Grid
+        x:Name="grid"
+        Background="Transparent"
+        Loaded="Grid_LoadedAsync">
         <Grid.RowDefinitions>
             <RowDefinition Height="10*" />
             <RowDefinition Height="1*" />
@@ -20,6 +23,11 @@
             <ColumnDefinition Width="2*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
+        <Grid.ContextMenu>
+            <ContextMenu>
+                <MenuItem Click="MenuItem_Click" Header="Guardar imagen" />
+            </ContextMenu>
+        </Grid.ContextMenu>
         <Viewbox
             Grid.Row="1"
             Grid.Column="1"
@@ -29,7 +37,8 @@
                 Padding="3"
                 Background="#A8AABC"
                 BorderThickness="1"
-                CornerRadius="12,12,12,12">
+                CornerRadius="12,12,12,12"
+                ToolTip="Puedes seleccionar otra fecha">
                 <Grid Grid.Row="1" Grid.Column="1">
 
                     <Grid.ColumnDefinitions>
@@ -105,13 +114,13 @@
         <Grid Grid.Row="1" Grid.Column="2">
             <Button
                 Name="btn5"
-                Grid.Column="1"
+                Grid.Row="1"
+                Grid.Column="2"
                 HorizontalAlignment="Center"
-                Background="Transparent"
-                BorderBrush="Transparent"
                 Click="btn5_Click"
-                Style="{DynamicResource BtnFav}"
+                Style="{StaticResource BtnFav}"
                 ToolTip="Añadir imagen a favoritos">
+
                 <Image Source="/Resources/fav.png" />
             </Button>
 

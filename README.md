@@ -49,11 +49,6 @@ La sección APOD (Astronomy Picture of the Day) es muy popular en la API de la N
 ### Screenshot APOD
 ![App Screenshot](https://github.com/sergiomc97/ProyectoApi-main/blob/main/capturas/Captura5.png?raw=true)
 
-## Capturas del Login:
-
-![App Screenshot](https://github.com/sergiomc97/ProyectoApi-main/blob/main/capturas/Captura1.png?raw=true)
-![App Screenshot](https://github.com/sergiomc97/ProyectoApi-main/blob/main/capturas/Captura2.png?raw=true)
-![App Screenshot](https://github.com/sergiomc97/ProyectoApi-main/blob/main/capturas/Captura3.png?raw=true)
 
 
 # Para programadores:

@@ -63,6 +63,16 @@ namespace ProyectoApi {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Byte[].
         /// </summary>
+        public static byte[] cargando {
+            get {
+                object obj = ResourceManager.GetObject("cargando", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
         public static byte[] color_gradient_spacecraft {
             get {
                 object obj = ResourceManager.GetObject("color_gradient_spacecraft", resourceCulture);

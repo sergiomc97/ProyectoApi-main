@@ -81,7 +81,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Top"
                     Background="{x:Null}"
-                    FontFamily="Cascadia Code Light"
+                    FontFamily="Nasalization Rg"
                     FontSize="16"
                     TextWrapping="Wrap" />
 
@@ -116,7 +116,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Top"
                     Background="{x:Null}"
-                    FontFamily="Cascadia Code Light"
+                    FontFamily="Nasalization Rg"
                     FontSize="16"
                     TextWrapping="Wrap" />
             </Grid>
@@ -149,7 +149,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Top"
                     Background="{x:Null}"
-                    FontFamily="Cascadia Code Light"
+                    FontFamily="Nasalization Rg"
                     FontSize="16"
                     TextWrapping="Wrap" />
             </Grid>
@@ -182,7 +182,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Top"
                     Background="{x:Null}"
-                    FontFamily="Cascadia Code Light"
+                    FontFamily="Nasalization Rg"
                     FontSize="16"
                     TextWrapping="Wrap" />
             </Grid>
@@ -213,7 +213,7 @@
                     Grid.Row="2"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Top"
-                    FontFamily="Cascadia Code Light"
+                    FontFamily="Nasalization Rg"
                     FontSize="16"
                     TextWrapping="Wrap" />
             </Grid>
@@ -245,7 +245,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Top"
                     Background="{x:Null}"
-                    FontFamily="Cascadia Code Light"
+                    FontFamily="Nasalization Rg"
                     FontSize="16"
                     TextWrapping="Wrap" />
             </Grid>
@@ -278,7 +278,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Top"
                     Background="{x:Null}"
-                    FontFamily="Cascadia Code Light"
+                    FontFamily="Nasalization Rg"
                     FontSize="16"
                     TextWrapping="Wrap" />
             </Grid>
@@ -310,7 +310,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Top"
                     Background="{x:Null}"
-                    FontFamily="Cascadia Code Light"
+                    FontFamily="Nasalization Rg"
                     FontSize="16"
                     TextWrapping="Wrap" />
             </Grid>

@@ -11,12 +11,14 @@ namespace ProyectoApi.Presentacion {
     /// </summary>
     public partial class Asteroids : Page {
 
+
         public Menu2 m;
         public string imageUri = string.Empty;
         Usuario u;
+        Asteroide a;
         int conta = 1;
-        List<Asteroide> asteroides = new();
-        ControllerApi c = new();
+        List<Asteroide> asteroides = new List<Asteroide>();
+        ControllerApi c = new ControllerApi();
 
         public Asteroids(Usuario u, Menu2 m) {
             InitializeComponent();
@@ -24,10 +26,7 @@ namespace ProyectoApi.Presentacion {
             this.u = u;
         }
 
-        /// <summary>
-        /// Si existe un objeto "Menu2" en el padre del objeto actual, se elimina y se agrega al control "UControl".
-        /// A continuación, obtiene las imágenes favoritas del usuario actual de la base de datos y establece la primera imagen como el fondo de la aplicación.
-        /// </summary>
+
         private async void Grid_LoadedAsync(object sender, RoutedEventArgs e) {
 
             if (m.Parent != null) {
@@ -46,6 +45,7 @@ namespace ProyectoApi.Presentacion {
 
         public void SetLabel(Asteroide a) {
 
+
             if (a.Peligroso == "True") {
                 peligrosoGrid.Background = (SolidColorBrush)new BrushConverter().ConvertFrom("#B25964");
 
@@ -57,18 +57,17 @@ namespace ProyectoApi.Presentacion {
 
             id.Text = a.Id;
 
-            distancia.Text = a.Km;
+            distancia.Text = a.Km + "KM";
 
             peligroso.Text = a.Peligroso;
 
-            fecha.Text = a.Fecha;
+            fecha.Text = "Esta informacion ya no esta en la api";
 
-            velocidad.Text = a.Velocidad;
+            velocidad.Text = "Esta informacion ya no esta en la api";
 
-            cuerpoOrbit.Text = a.CuerpoOr;
+            cuerpoOrbit.Text = "Esta informacion ya no esta en la api";
 
-            veces.Text = a.NumVeces;
-
+            veces.Text = "Esta informacion ya no esta en la api";
         }
 
 

@@ -20,6 +20,11 @@
             <ColumnDefinition Width="2*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
+        <Grid.ContextMenu>
+            <ContextMenu>
+                <MenuItem Click="MenuItem_Click" Header="Guardar imagen" />
+            </ContextMenu>
+        </Grid.ContextMenu>
 
         <Border
             Grid.Row="1"
@@ -27,7 +32,8 @@
             Padding="3"
             Background="#A8AABC"
             BorderThickness="1"
-            CornerRadius="12,12,12,12">
+            CornerRadius="12,12,12,12"
+            ToolTip="Selecciona fecha y camara">
             <Grid Grid.Row="1" Grid.Column="1">
 
                 <Grid.ColumnDefinitions>
@@ -228,10 +234,10 @@
             Grid.Row="1"
             Grid.Column="2"
             HorizontalAlignment="Center"
-            Background="Transparent"
-            BorderBrush="Transparent"
             Click="btn5_Click"
-            Style="{DynamicResource BtnFav}">
+            Style="{StaticResource BtnFav}"
+            ToolTip="Añadir imagen a favoritos">
+
             <Image Source="/Resources/fav.png" />
         </Button>
 
@@ -268,6 +274,14 @@
             </Expander.Header>
             <Grid x:Name="UControl" />
         </Expander>
+        <Image
+            x:Name="contenedorImg"
+            Grid.Column="1"
+            Width="720"
+            Height="525"
+            Margin="10,10,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
 
 
     </Grid>

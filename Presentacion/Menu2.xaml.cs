@@ -1,5 +1,6 @@
 ﻿using ProyectoApi.model;
 using System;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
 using System.Runtime.InteropServices;
@@ -89,9 +90,9 @@ namespace ProyectoApi.Presentacion {
         private void btnAcercaDe_Click(object sender, RoutedEventArgs e) {
             string url = "https://github.com/sergiomc97/ProyectoApi-main/blob/main/README.md";
             string ruta_trabajo = Path.GetDirectoryName(Environment.ProcessPath);
-            string url2 =ruta_trabajo+@"\\Documentacion\\Documentation1.chm";
-           
-            
+            string url2 =ruta_trabajo+@"\\Documentation1\\Documentation1.chm";
+            MessageBox.Show(ruta_trabajo);
+
             try {
                 Process.Start(url);
                 Process.Start(url2);
@@ -106,6 +107,7 @@ namespace ProyectoApi.Presentacion {
                     Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
                     Process.Start(new ProcessStartInfo(url2) { UseShellExecute = true });
 
+
                 } else if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux)) {
 
                     Process.Start("xdg-open", url);
@@ -116,8 +118,6 @@ namespace ProyectoApi.Presentacion {
                     Process.Start("open", url);
                     Process.Start("open", url2);
 
-                } else {
-                    throw;
                 }
             }
 

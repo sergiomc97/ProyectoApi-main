@@ -1,5 +1,7 @@
-﻿using ProyectoApi.controller;
+﻿using Microsoft.Win32;
+using ProyectoApi.controller;
 using ProyectoApi.model;
+using System.IO;
 using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
@@ -32,7 +34,7 @@ namespace ProyectoApi.Presentacion {
         }
 
 
-        private async void Grid_LoadedAsync(object sender, RoutedEventArgs e) {
+        private void Grid_LoadedAsync(object sender, RoutedEventArgs e) {
             if (m.Parent != null) {
                 ((Grid)m.Parent).Children.Remove(m);
                 UControl.Children.Add(m);
@@ -49,8 +51,7 @@ namespace ProyectoApi.Presentacion {
 
         public void parseJson(JsonDocument js) {
 
-            jsonBing = js;
-            JsonElement jsE = jsonBing.RootElement.GetProperty("resourceSets")[0].GetProperty("resources");
+            JsonElement jsE = js.RootElement.GetProperty("resourceSets")[0].GetProperty("resources");
             int numIndex = jsE.GetArrayLength();
 
             for (int i = 0; i < numIndex; i++) {
@@ -60,14 +61,14 @@ namespace ProyectoApi.Presentacion {
         }
 
         private async void busq_Click(object sender, RoutedEventArgs e) {
-
+            list.Items.Clear();
             jsonBing = await c.GetJson($"http://dev.virtualearth.net/REST/v1/Locations?query={textBusq.Text}&maxResults=20&key={keyBing}&output=json");
             parseJson(jsonBing);
         }
 
 
-        private async void list_SelectionChanged(object sender, SelectionChangedEventArgs e) {
-            if (jsonBing != null) {
+        private void list_SelectionChanged(object sender, SelectionChangedEventArgs e) {
+            if (jsonBing != null && list.Items.Count > 0 ) {
 
                 int selectedIndex = list.SelectedIndex;
                 JsonElement elemento = jsonBing.RootElement.GetProperty("resourceSets")[0].GetProperty("resources")[selectedIndex].GetProperty("point").GetProperty("coordinates");
@@ -83,6 +84,21 @@ namespace ProyectoApi.Presentacion {
 
         private void btn5_Click(object sender, RoutedEventArgs e) {
             cBd.InsertarImagen(img, u);
+        }
+        private void MenuItem_Click(object sender, RoutedEventArgs e) {
+
+            SaveFileDialog save = new SaveFileDialog();
+            save.Title = "Guardar imagen como ";
+            save.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+            if (img != null) {
+                if (save.ShowDialog() == true) {
+                    JpegBitmapEncoder jpg = new JpegBitmapEncoder();
+                    jpg.Frames.Add(BitmapFrame.Create(img));
+                    using (Stream stm = File.Create(save.FileName)) {
+                        jpg.Save(stm);
+                    }
+                }
+            }
         }
     }
 }

@@ -1,6 +1,9 @@
-﻿using ProyectoApi.controller;
+﻿using Microsoft.Win32;
+using ProyectoApi.controller;
 using ProyectoApi.model;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
@@ -13,6 +16,7 @@ namespace ProyectoApi.Presentacion {
 
         ControllerBD cBd = new ControllerBD();
         List<BitmapImage> fondos;
+        BitmapImage imagenActual;
         int conta = 0;
         private ControllerApi c = new ControllerApi();
         Usuario u;
@@ -41,27 +45,67 @@ namespace ProyectoApi.Presentacion {
 
             fondos = cBd.ObtenerImagen(u);
 
-            if (fondos.Count > 0) {
-                c.SetBackground(fondos[0], grid);
-            } else {
-                MessageBox.Show("todavia no hay favoritos!");
+            switch (fondos.Count) {
+                case 0:
+                    MessageBox.Show("todavia no hay favoritos");
+                    break;
+                case 1:
+                    imgActual.Source = imagenActual;
+                    Siguiente.IsEnabled= false;
+                    anterior.IsEnabled= false;
+                    break;
+                case >2:
+                    imgActual.Source = fondos[0];
+                    imgSig.Source = fondos[1];
+                    break;
+
+
             }
             m.lablUserNick.Content = u.Nick;
 
         }
 
 
+        private void MenuItem_Click(object sender, RoutedEventArgs e) {
 
-        private void girar_Click(object sender, RoutedEventArgs e) {
+            SaveFileDialog save = new SaveFileDialog();
+            save.Title = "Guardar imagen como ";
+            save.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+            if (imagenActual != null) {
+                if (save.ShowDialog() == true) {
+                    JpegBitmapEncoder jpg = new JpegBitmapEncoder();
+                    jpg.Frames.Add(BitmapFrame.Create(imagenActual));
+                    using (Stream stm = File.Create(save.FileName)) {
+                        jpg.Save(stm);
+                    }
+                }
+            }
+        }
 
+        private void anterior_Click(object sender, RoutedEventArgs e) {
+            if (conta > 0) {
+                conta--;
+                imgActual.Source = fondos[conta];
+                if (conta > 0) {
+                    imgAnt.Source = fondos[conta - 1];
+                } else {
+                    imgAnt.Source = null;
+                }
+                imgSig.Source = fondos[conta + 1];
+            }
+        }
+
+        private void Siguiente_Click(object sender, RoutedEventArgs e) {
             if (conta < fondos.Count - 1) {
                 conta++;
-                c.SetBackground(fondos[conta], grid);
-
-            } else {
-                conta = 0;
+                imgActual.Source = fondos[conta];
+                imgAnt.Source = fondos[conta - 1];
+                if (conta < fondos.Count - 1) {
+                    imgSig.Source = fondos[conta + 1];
+                } else {
+                    imgSig.Source = null;
+                }
             }
-
         }
     }
 }
