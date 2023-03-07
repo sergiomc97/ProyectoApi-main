@@ -72,7 +72,6 @@ namespace ProyectoApi.controller {
                 conn.Close();
             }
 
-            conn.Close();
             return u;
 
         }

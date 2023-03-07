@@ -33,7 +33,7 @@ namespace ProyectoApi.Presentacion {
             a = new Asteroids(u, m);
             r = new ROVER(u, m);
             this.admin = new Admin(u, m);
-            m.miEvento += MiEventoEventHandler;
+            m.miEvento += MiEventoEventHandler;  
             this.Content = l;
         }
 
