@@ -160,12 +160,12 @@ namespace ProyectoApi.controller {
                     el.GetProperty("name").ToString(),
                     el.GetProperty("id").ToString(),
                     el.GetProperty("estimated_diameter").GetProperty("kilometers").GetProperty("estimated_diameter_min").ToString(),
-                    el.GetProperty("is_potentially_hazardous_asteroid").ToString()
+                    el.GetProperty("is_potentially_hazardous_asteroid").ToString(),
                     // Han cambiado la API :(
-                    //el.GetProperty("close_approach_data")[0].GetProperty("close_approach_date_full").ToString(),
-                    //el.GetProperty("close_approach_data")[0].GetProperty("relative_velocity").GetProperty("kilometers_per_hour").ToString(),
-                    //el.GetProperty("close_approach_data")[0].GetProperty("orbiting_body").ToString(),
-                    //el.GetProperty("close_approach_data").GetArrayLength().ToString()
+                    el.GetProperty("close_approach_data")[0].GetProperty("close_approach_date_full").ToString(),
+                    el.GetProperty("close_approach_data")[0].GetProperty("relative_velocity").GetProperty("kilometers_per_hour").ToString(),
+                    el.GetProperty("close_approach_data")[0].GetProperty("orbiting_body").ToString(),
+                    el.GetProperty("close_approach_data").GetArrayLength().ToString()
 
                     );
                 asteroides.Add(a);

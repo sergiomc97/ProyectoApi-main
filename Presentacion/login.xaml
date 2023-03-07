@@ -336,7 +336,7 @@
             </Grid>
         </Grid>
 
-        <Grid x:Name="gridOK">
+        <Grid x:Name="gridOK" KeyDown="Button_KeyDown">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
@@ -436,6 +436,7 @@
                     HorizontalAlignment="Left"
                     Click="Button_Click"
                     Content="Iniciar sesion"
+                    
                     Style="{StaticResource btnLogin}" />
                 <Button
                     x:Name="SignUp"

@@ -71,24 +71,6 @@ namespace ProyectoApi.Presentacion {
 
 
 
-
-        /// <summary>
-        /// funcion que devuelve el json de la peticion
-        /// </summary>
-        /// <remarks>
-        /// There isn't a way to add XML comments for properties
-        /// created for positional records, yet. The language
-        /// design team is still considering what tags should
-        /// be supported, and where. Currently, you can use
-        /// the "param" tag to describe the parameters to the
-        /// primary constructor.
-        /// </remarks>
-        /// <param name="consulta">
-        /// url de consulta
-        /// </param>
-
-
-
         public void SetText() {
 
 

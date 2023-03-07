@@ -15,18 +15,6 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_0B06906FC9E34776AAB373D184596236"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_A95F7AC29985434285A570661EF8467F"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_ABB35DCF27704640A579584D877CCA41"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -34,6 +22,12 @@
         "Entry"
         {
         "MsmKey" = "8:_B26177D6CCDF4138AED75A78ACB1C5E9"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D0BF20FE48414F24AA7FA7A697BB720B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -146,32 +140,12 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0B06906FC9E34776AAB373D184596236"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_ABB35DCF27704640A579584D877CCA41"
             {
-            "SourcePath" = "8:..\\..\\descarga.jpg"
-            "TargetName" = "8:descarga.jpg"
+            "SourcePath" = "8:..\\Documentation1\\Help\\Documentation1.chm"
+            "TargetName" = "8:Documentation1.chm"
             "Tag" = "8:"
-            "Folder" = "8:_AF8A144610304D83BC2FAFDCEADD2E05"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:TRUE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A95F7AC29985434285A570661EF8467F"
-            {
-            "SourcePath" = "8:..\\..\\..\\Downloads\\NASA_logo.svg.ico"
-            "TargetName" = "8:NASA_logo.svg.ico"
-            "Tag" = "8:"
-            "Folder" = "8:_AF8A144610304D83BC2FAFDCEADD2E05"
+            "Folder" = "8:_A877F3D105534AC2A3904D38E4068DFC"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -186,12 +160,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_ABB35DCF27704640A579584D877CCA41"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D0BF20FE48414F24AA7FA7A697BB720B"
             {
-            "SourcePath" = "8:..\\Documentation1\\Help\\Documentation1.chm"
-            "TargetName" = "8:Documentation1.chm"
+            "SourcePath" = "8:..\\..\\..\\..\\..\\Downloads\\NASA_logo.svg.ico"
+            "TargetName" = "8:NASA_logo.svg.ico"
             "Tag" = "8:"
-            "Folder" = "8:_A877F3D105534AC2A3904D38E4068DFC"
+            "Folder" = "8:_AF8A144610304D83BC2FAFDCEADD2E05"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -305,7 +279,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:InstaladorProyectoApi"
         "ProductCode" = "8:{8C2E07C7-3818-4DA0-B340-31297E2B2157}"
-        "PackageCode" = "8:{AD8A2073-1217-427F-9FFB-FCB5754F14FD}"
+        "PackageCode" = "8:{694AF06D-8E70-43E8-B6B3-FD564565AD2C}"
         "UpgradeCode" = "8:{40889F06-1CC3-4FC2-B400-FA99D3A001CE}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -436,7 +410,7 @@
             "Target" = "8:_B26177D6CCDF4138AED75A78ACB1C5E9"
             "Folder" = "8:_3B5916C8475E48DFAF75D4639DFA08D3"
             "WorkingFolder" = "8:_581018E63E1C409EBE706354BAD640B9"
-            "Icon" = "8:_A95F7AC29985434285A570661EF8467F"
+            "Icon" = "8:_D0BF20FE48414F24AA7FA7A697BB720B"
             "Feature" = "8:"
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_B01D5F0192414281809224F30B205D24"
@@ -450,7 +424,7 @@
             "Target" = "8:_B26177D6CCDF4138AED75A78ACB1C5E9"
             "Folder" = "8:_FE0076109690483BB1E714F2756D8DE5"
             "WorkingFolder" = "8:_581018E63E1C409EBE706354BAD640B9"
-            "Icon" = "8:_A95F7AC29985434285A570661EF8467F"
+            "Icon" = "8:_D0BF20FE48414F24AA7FA7A697BB720B"
             "Feature" = "8:"
             }
         }
@@ -480,8 +454,7 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:2"
-                            "Value" = "8:_0B06906FC9E34776AAB373D184596236"
+                            "Setting" = "3:1"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "InstallAllUsersVisible"
@@ -538,8 +511,7 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:2"
-                            "Value" = "8:_0B06906FC9E34776AAB373D184596236"
+                            "Setting" = "3:0"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "CopyrightWarning"

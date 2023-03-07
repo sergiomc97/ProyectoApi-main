@@ -1,6 +1,7 @@
 ﻿using ProyectoApi.controller;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace ProyectoApi.Presentacion {
     /// <summary>
@@ -15,25 +16,30 @@ namespace ProyectoApi.Presentacion {
         }
 
         private void Button_Click(object sender, RoutedEventArgs e) {
-            if (user.Text != string.Empty && pass.Password != string.Empty) {
+            InicioSesion();
+        }
+        private void InicioSesion() {
+
+            if (user.Text != string.Empty && pass.Password != string.Empty)
+            {
 
                 int id = cb.ComprobarCredenciales(user.Text, pass.Password);
 
-                if (id >= 0) {
+                if (id >= 0)
+                {
 
                     Window1 w = new(cb.Consulta(id));
                     w.Show();
                     this.Close();
 
-                } else {
+                }
+                else
+                {
                     gridOK.Visibility = Visibility.Collapsed;
                     gridError.Visibility = Visibility.Visible;
 
                 }
             }
-        }
-
-        private void CheckBox_Checked(object sender, RoutedEventArgs e) {
 
         }
 
@@ -76,6 +82,14 @@ namespace ProyectoApi.Presentacion {
         private void Button_Click_2(object sender, RoutedEventArgs e) {
             gridSignUp.Visibility = Visibility.Collapsed;
             gridOK.Visibility = Visibility.Visible;
+        }
+
+
+        private void Button_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter){
+                InicioSesion();
+            }
         }
     }
 }

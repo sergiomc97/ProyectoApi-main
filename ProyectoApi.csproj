@@ -10,6 +10,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="capturas\**" />
+    <EmbeddedResource Remove="capturas\**" />
+    <None Remove="capturas\**" />
+    <Page Remove="capturas\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Resources\cargando.gif" />
     <None Remove="Resources\color-gradient-spacecraft.png" />
     <None Remove="Resources\color-scheme-left.png" />

@@ -61,13 +61,13 @@ namespace ProyectoApi.Presentacion {
 
             peligroso.Text = a.Peligroso;
 
-            fecha.Text = "Esta informacion ya no esta en la api";
+            fecha.Text = a.Fecha;
 
-            velocidad.Text = "Esta informacion ya no esta en la api";
+            velocidad.Text = a.Velocidad;
 
-            cuerpoOrbit.Text = "Esta informacion ya no esta en la api";
+            cuerpoOrbit.Text = a.CuerpoOr;
 
-            veces.Text = "Esta informacion ya no esta en la api";
+            veces.Text = a.NumVeces;
         }
 
 

@@ -59,7 +59,7 @@ La sección APOD (Astronomy Picture of the Day) es muy popular en la API de la N
 ##### Consulta para obtener la Imagen del dia
 
 ```http
-  GET https://api.nasa.gov/planetary/apod?api_key={key}
+  GET https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
 ```
 
 | Parameter | Type     | Description                       |
@@ -70,7 +70,7 @@ La sección APOD (Astronomy Picture of the Day) es muy popular en la API de la N
 ##### Consulta para obtener la vista satelital de una ubicacion
 
 ```http
-  GET https://api.nasa.gov/planetary/earth/imagery?lon={lon}&lat={lat}&api_key={key}
+  GET https://api.nasa.gov/planetary/earth/imagery?lon=86.9250261&lat=27.98785&date=2019-01-01&dim=0.5&api_key=DEMO_KEY
 ```
 
 | Parameter | Type     | Description                       |
@@ -80,12 +80,15 @@ La sección APOD (Astronomy Picture of the Day) es muy popular en la API de la N
 | `lon`      | `string` | Latitud de la ubicacion |
 
 #### EPIC
-##### Obtiene imagenes del del satélite DSCOVR
+##### Obtiene una lista de imagenes del  satélite DSCOVR
 
+```http
+  GET https://api.nasa.gov/EPIC/api/natural?api_key=DEMO_KEY
+```
+##### Para obtener cada imagen:
 ```http
   GET https://epic.gsfc.nasa.gov/archive/natural/{("yyyy/MM/dd")}/jpg/{imagenes[i]}.jpg
 ```
-
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `imagen`      | `string` | Direccion a la imagen |
@@ -94,7 +97,7 @@ La sección APOD (Astronomy Picture of the Day) es muy popular en la API de la N
 ##### Obtiene datos de asteroides cercanos a la tierra
 
 ```http
-  GET http://api.nasa.gov/neo/rest/v1/neo/browse?page=0&size=20&api_key={key}"
+  GET http://api.nasa.gov/neo/rest/v1/neo/browse?page=0&size=20&api_key=DEMO_KEY
 
 ```
 
@@ -102,7 +105,7 @@ La sección APOD (Astronomy Picture of the Day) es muy popular en la API de la N
 ##### Obtiene imagenes de las camaras del rover curiosity en marte
 
 ```http
-  GET https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/$"photos?earth_date={}&camera={}&api_key={key}"
+  GET https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2015-01-01&camera=FHAZ&api_key=DEMO_KEY
 
 ```
 

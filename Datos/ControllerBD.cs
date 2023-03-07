@@ -333,7 +333,7 @@ namespace ProyectoApi.controller {
         /// <param name="bitmap">La imagen a convertir.</param>
         /// <returns>Un arreglo de bytes que representa la imagen.</returns>
         public static byte[] ImageToByte(BitmapImage bitmap) {
-            var encoder = new PngBitmapEncoder(); // or any other BitmapEncoder
+            var encoder = new PngBitmapEncoder();
 
             encoder.Frames.Add(BitmapFrame.Create(bitmap));
 
@@ -350,7 +350,7 @@ namespace ProyectoApi.controller {
 
             var image = new BitmapImage();
             image.BeginInit();
-            image.CacheOption = BitmapCacheOption.OnLoad; // here
+            image.CacheOption = BitmapCacheOption.OnLoad;
             image.StreamSource = ms;
             image.EndInit();
             return image;

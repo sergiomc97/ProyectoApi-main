@@ -5,7 +5,7 @@
     xmlns:local="clr-namespace:ProyectoApi"
     StartupUri="Presentacion/login.xaml">
     <Application.Resources>
-
+        <!--  Estilo para quitar el textbox del datepicker  -->
         <Style x:Key="date" TargetType="{x:Type DatePicker}">
             <Style.Resources>
                 <Style TargetType="DatePickerTextBox">
@@ -17,6 +17,7 @@
                 </Style>
             </Style.Resources>
         </Style>
+        <!--  Estilo para las etiquetas del rover  -->
         <Style x:Key="LabelRover" TargetType="{x:Type Label}">
             <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" />
             <Setter Property="Background" Value="Transparent" />
@@ -49,7 +50,7 @@
                 </Setter.Value>
             </Setter>
         </Style>
-
+        <!--  Estilo para los botones de la aplicacion  -->
         <Style x:Key="btnStyle" TargetType="{x:Type Button}">
             <Style.Resources>
                 <Style TargetType="Border">
@@ -58,6 +59,7 @@
             </Style.Resources>
         </Style>
 
+        <!--  Estilo para los botones del login  -->
 
         <Style
             x:Key="btnLogin"
@@ -70,7 +72,7 @@
 
 
         </Style>
-
+        <!--  Estilo para las Label del login  -->
         <Style x:Key="lablLogin" TargetType="{x:Type Label}">
 
             <Setter Property="Foreground" Value="#5DECBF" />
@@ -79,7 +81,7 @@
             <Setter Property="FontStyle" Value="Italic" />
             <Setter Property="FontWeight" Value="Thin" />
         </Style>
-
+        <!--  Estilo para los PasswordBox del login  -->
         <Style x:Key="passLoginBack" TargetType="{x:Type PasswordBox}">
 
             <Setter Property="Background" Value="Transparent" />
@@ -89,7 +91,7 @@
             <Setter Property="FontSize" Value="18" />
             <Setter Property="FontFamily" Value="Nasalization Rg" />
         </Style>
-
+        <!--  Estilo para los textbox del login  -->
         <Style x:Key="txtLoginBack" TargetType="{x:Type TextBox}">
 
             <Setter Property="Background" Value="Transparent" />
@@ -115,7 +117,7 @@
             </Setter>
         </Style>
 
-
+        <!--  Estilo para los textobox con el texto largo  -->
         <Style x:Key="TextBoxTextoLargo" TargetType="{x:Type TextBox}">
             <Setter Property="Background" Value="Transparent" />
             <Setter Property="BorderBrush" Value="Transparent" />
@@ -140,6 +142,9 @@
         <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4" />
         <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5" />
         <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383" />
+
+
+        <!--  Estilo para el boton de favoritos  -->
         <Style x:Key="BtnFav" TargetType="{x:Type Button}">
             <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}" />
             <Setter Property="Background" Value="Transparent" />
