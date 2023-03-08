@@ -92,6 +92,7 @@ namespace ProyectoApi.Presentacion {
 
         private void btn5_Click(object sender, RoutedEventArgs e) {
             cBd.InsertarImagen(ImagenActual, u);
+            MessageBox.Show("Añadido a favoritos");
         }
         private void MenuItem_Click(object sender, RoutedEventArgs e) {
 

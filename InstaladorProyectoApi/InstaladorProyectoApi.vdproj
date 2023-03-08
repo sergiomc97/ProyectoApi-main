@@ -219,7 +219,7 @@
             }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_581018E63E1C409EBE706354BAD640B9"
             {
-            "DefaultLocation" = "8:[FavoritesFolder][Manufacturer]\\[ProductName]"
+            "DefaultLocation" = "8:[AppDataFolder][Manufacturer]\\[ProductName]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -279,7 +279,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:InstaladorProyectoApi"
         "ProductCode" = "8:{8C2E07C7-3818-4DA0-B340-31297E2B2157}"
-        "PackageCode" = "8:{694AF06D-8E70-43E8-B6B3-FD564565AD2C}"
+        "PackageCode" = "8:{BE567D2C-F38C-4AAC-8CD4-91E86D97C5C9}"
         "UpgradeCode" = "8:{40889F06-1CC3-4FC2-B400-FA99D3A001CE}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"

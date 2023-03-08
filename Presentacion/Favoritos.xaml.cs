@@ -16,7 +16,6 @@ namespace ProyectoApi.Presentacion {
 
         ControllerBD cBd = new ControllerBD();
         List<BitmapImage> fondos;
-        BitmapImage imagenActual;
         int conta = 0;
         private ControllerApi c = new ControllerApi();
         Usuario u;
@@ -48,13 +47,14 @@ namespace ProyectoApi.Presentacion {
             switch (fondos.Count) {
                 case 0:
                     MessageBox.Show("todavia no hay favoritos");
+                    NavigationService.GoBack();
                     break;
                 case 1:
-                    imgActual.Source = imagenActual;
+                    imgActual.Source = fondos[0];
                     Siguiente.IsEnabled= false;
                     anterior.IsEnabled= false;
                     break;
-                case >2:
+                case >=2:
                     imgActual.Source = fondos[0];
                     imgSig.Source = fondos[1];
                     break;
@@ -65,22 +65,6 @@ namespace ProyectoApi.Presentacion {
 
         }
 
-
-        private void MenuItem_Click(object sender, RoutedEventArgs e) {
-
-            SaveFileDialog save = new SaveFileDialog();
-            save.Title = "Guardar imagen como ";
-            save.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
-            if (imagenActual != null) {
-                if (save.ShowDialog() == true) {
-                    JpegBitmapEncoder jpg = new JpegBitmapEncoder();
-                    jpg.Frames.Add(BitmapFrame.Create(imagenActual));
-                    using (Stream stm = File.Create(save.FileName)) {
-                        jpg.Save(stm);
-                    }
-                }
-            }
-        }
 
         private void anterior_Click(object sender, RoutedEventArgs e) {
             if (conta > 0) {

@@ -28,7 +28,7 @@ namespace ProyectoApi.Presentacion {
         /// A continuación, obtiene las imágenes favoritas del usuario actual de la base de datos y establece la primera imagen como el fondo de la aplicación.
         /// </summary>
         private void Grid_LoadedAsync(object sender, RoutedEventArgs e) {
-
+            combo.Items.Clear();
             if (m.Parent != null) {
                 ((Grid)m.Parent).Children.Remove(m);
                 UControl.Children.Add(m);

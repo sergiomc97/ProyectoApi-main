@@ -127,7 +127,7 @@ namespace ProyectoApi.controller {
             SHA256 sha256 = SHA256.Create();
             byte[] hashBytes = sha256.ComputeHash(contrasenaBytes);
 
-            // Convertir el hash en una cadena hexadecimal
+            // quitar los guiones
             string contrasenaCifrada = BitConverter.ToString(hashBytes).Replace("-", "");
 
             return contrasenaCifrada;
@@ -305,9 +305,6 @@ namespace ProyectoApi.controller {
             comando = new SQLiteCommand(consulta, conn);
             comando.Parameters.AddWithValue("@id", u.Id);
             List<BitmapImage> imagenes = new();
-
-
-
 
             try {
                 r = comando.ExecuteReader();

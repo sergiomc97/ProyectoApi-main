@@ -91,7 +91,6 @@ namespace ProyectoApi.Presentacion {
             string url = "https://github.com/sergiomc97/ProyectoApi-main/blob/main/README.md";
             string ruta_trabajo = Path.GetDirectoryName(Environment.ProcessPath);
             string url2 =ruta_trabajo+@"\\Documentation1\\Documentation1.chm";
-            MessageBox.Show(ruta_trabajo);
 
             try {
                 Process.Start(url);
